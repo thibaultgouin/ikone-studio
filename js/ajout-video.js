@@ -6,7 +6,6 @@ $(document).ready(function(){
 
 
 var callYoutube = function(playerDivId, youtubeVideoId, name){
-    console.log('YOLO');
 /*
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
@@ -18,6 +17,7 @@ var callYoutube = function(playerDivId, youtubeVideoId, name){
       // 3. This function creates an <iframe> (and YouTube player)
       //    after the API code downloads.
       var player;
+      var player2;
 onYouTubeIframeAPIReady();
 
       function onYouTubeIframeAPIReady() {
@@ -57,15 +57,20 @@ onYouTubeIframeAPIReady();
     // Firebase ref
     var ref = new Firebase("https://ykone.firebaseio.com/video");
 
-    ref.limitToLast(1).on("child_added", function(snapshot) {
+    ref.limitToLast(2).on("child_added", function(snapshot) {
         var obj = snapshot.val();
         console.log("CHILD_ADDED LIMIT TO LAST",obj.youtubeVideoId, obj.name);
         callYoutube('player', obj.youtubeVideoId, obj.name);
     });
+    
+    ref.limitToLast(1).on("child_added", function(snapshot) {
+        var obj = snapshot.val();
+        console.log("CHILD_ADDED LIMIT TO LAST",obj.youtubeVideoId, obj.name);
+        callYoutube('player2', obj.youtubeVideoId, obj.name);
+    });
 
     ref.orderByChild('value').on("child_added", function(snapshot) {
         var obj = snapshot.val();
-        console.log("CHILD_ADDED NO LIMIT", obj.name);
         var li = $('<li>'+ obj.name +'</li>');
         $('#liste_videos').prepend(li);
     });

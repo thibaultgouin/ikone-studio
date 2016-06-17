@@ -12,7 +12,7 @@
     <title>Ikone Studio</title>
 
     <!-- CSS LINKS -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/ajoutvideo.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css"/>
@@ -24,24 +24,28 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body class="main">
 
     <div id="upload">
 <form>
-    <input type="video_name" id="video_name" placeholder="Nom de la video"/>
+    <input type="video_name" id="video_name" required="required" placeholder="Nom de la video"/>
 	<input type="text" id="url" required="required" placeholder="Lien vidéo">
 	<input class="button_upload" type="submit" id="upload" value="Upload">
 </form>
 </div>
 
-
+<h1>Derniere vidéo ajoutée</h1>
+<div id="player2"></div>
+<h1>Avant derniere video ajoutée</h1>
 <div id="player"></div>
 
 <ul id="liste_videos"></ul>
 
 
 
-    </body>
+</body>
+    
 <!-- JS LINK -->
 
 
