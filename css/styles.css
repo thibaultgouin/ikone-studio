@@ -82,40 +82,56 @@ html {
 }
 
 
-/* ####### PAGE EQUIPE ###### */
+/* ####### PAGE PROJET ###### */
 
-#equipe_1{
+#projet_1{
     background-image:url("../assets/img/bg_equipe1.jpg");
     width:100%;
     background-size:cover;
     top:0;
     left:0;
-    transition:top 0.8s;
     position: fixed;
 
 }
 
-#equipe_2{
+#projet_2{
     background-image:url("../assets/img/bg_equipe2.jpg");
     width:100%;
     background-size:cover;
     top:100%;
     left:0;
-    transition:top 0.8s;
     position: fixed;
 }
 
-#equip_1 ul li{
+#projet_1 ul li{
     font-size:35px;
     position:fixed;
     top:50%;
     transform:translate(-50%,-50%);
 }
 
+.title_project{
+    position:fixed;
+    z-index:9000;
+    font-size:50px;
+    top:50%;
+    transition:0.8s;
+}
 
+.title_project ul{
+    list-style:none;
+}
 
+.title_project ul li{
+    cursor:pointer;
+}
 
-/* ####### FIN PAGE EQUIPE ###### */
+.title_project ul li.active{
+    font-size:65px;
+
+}
+
+/* ####### FIN PAGE PROJET ###### */
 
 
 .title_section{
