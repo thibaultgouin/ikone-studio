@@ -7,6 +7,8 @@ $(document).ready(function () {
             $(".video1").fadeOut("200");
             $("#first_home").css("background-color","black");
             $("#second_home").fadeIn("100");
+            $("#btn-1").removeClass("active");
+            $("#btn-2").addClass("active");
         }
 
     });
@@ -16,11 +18,15 @@ $(document).ready(function () {
             $("#second_home").css("top","100%");
             $("#first_home").css("background-color","transparent");
             $(".video1").fadeIn("200");
+            $("#btn-1").addClass("active");
+            $("#btn-2").removeClass("active");
         }
         else{
             $("#trois_home").css({top: 0});
             /* $("#second_home").css("background-color","black");*/
             $("#trois_home").fadeIn("100");
+            $("#btn-3").addClass("active");
+            $("#btn-2").removeClass("active");
         }
 
 
@@ -30,12 +36,15 @@ $(document).ready(function () {
         if (e.originalEvent.wheelDelta / 120 > 0) {
             $("#trois_home").css("top","100%");
             $("#second_home").css("top","0");
-
+            $("#btn-2").addClass("active");
+            $("#btn-3").removeClass("active");
         }
 
         else{
             $("#quatre_home").css({top: 0});
             $("#quatre_home").fadeIn("100");
+            $("#btn-4").addClass("active");
+            $("#btn-3").removeClass("active");
         }
 
     });
@@ -44,7 +53,8 @@ $(document).ready(function () {
         if (e.originalEvent.wheelDelta / 120 > 0) {
             $("#quatre_home").css("top","100%");
             $("#trois_home").css("top","0");
-
+            $("#btn-4").removeClass("active");
+            $("#btn-3").addClass("active");
         }
 
     });
