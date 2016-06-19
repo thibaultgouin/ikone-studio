@@ -56,7 +56,9 @@ html {
 
 #second_home {
     width:100%;
-    background-color:rosybrown;
+    /*background-color:rosybrown;*/
+    background-image:url("../assets/img/bg1.jpg");
+    background-size:cover;
     position:fixed;
     top:100%;
     left:0;
@@ -65,7 +67,9 @@ html {
 
 #trois_home {
     width:100%;
-    background-color:#17423C;
+   /* background-color:#17423C;*/
+    background-image:url("../assets/img/bg2.jpg");
+    background-size:cover;
     position:fixed;
     top:100%;
     left:0;
@@ -74,7 +78,8 @@ html {
 
 #quatre_home {
     width:100%;
-    background-color:black;
+    background-image:url("../assets/img/bg3.jpg");
+    background-size:cover;
     position:fixed;
     top:100%;
     left:0;
@@ -171,23 +176,22 @@ html {
 #dotNav li {
     position: relative;
     background: none repeat scroll 0 0 #cccccc;
-    border:1px solid #aaaaaa;
     border-radius: 50%;
     cursor: pointer;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     margin: 10px 10px 0px 0px;
     vertical-align:bottom;
 }
 #dotNav li.active {
-    background-color: #ffffff;
+    background-color: white;
     background-image: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
     background-repeat: repeat-x;
 }
 #dotNav li:hover {
     background: none repeat scroll 0 0 #EEEEEE;
 }
-#dotNav a {
+#dotNav span{
     outline: 0;
     margin-left:35px;
     color:white;
