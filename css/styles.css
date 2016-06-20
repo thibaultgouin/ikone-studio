@@ -1,204 +1,29 @@
 html, body{
+    max-width: 100%;
+    height: 100%;
+    margin: 0; padding: 0;
+    overflow-x:hidden;
+}
+
+body{
+    font-family: Georgia, serif;
+    width: 100%;
+    display:table;
+    min-height: 100%;
     margin: 0;
     padding: 0;
 }
 
-.wrapper,
-body,
-html {
-    width: 100%;
-    height: 100%
-}
-
-
-.wrapper {
-    position: relative;
-    /*overflow: hidden*/
-}
-
-.navbar-nav ul li a{
-    color:white;
-    font-size:16px;
-    margin-top:15px;
-    margin-left:15px;
-}
-
-.navbar-nav ul li a:hover{
-    color:red;
-    background: transparent;
-}
-
- section{
-    text-align: center;
-    color: #fff;
-    height:auto!important;
-    min-height:100%;
-    background-attachment: scroll;
-    background-color:transparent;
-    background-size: cover;
-    overflow:hidden;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-#first_home{
-    background-color:transparent;
-    transition:0.8s
-}
-
-#first_home video{
-    position: fixed;
+#wrapper {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    position:absolute;
     top:0;
+    right:0;
     left:0;
-    background-color:black;
+    z-index: -1;
 }
 
-#second_home {
-    width:100%;
-    /*background-color:rosybrown;*/
-    background-image:url("../assets/img/bg1.jpg");
-    background-size:cover;
-    position:fixed;
-    top:100%;
-    left:0;
-    transition:top 0.8s;
-}
-
-#trois_home {
-    width:100%;
-   /* background-color:#17423C;*/
-    background-image:url("../assets/img/bg2.jpg");
-    background-size:cover;
-    position:fixed;
-    top:100%;
-    left:0;
-    transition:top 0.8s;
-}
-
-#quatre_home {
-    width:100%;
-    background-image:url("../assets/img/bg3.jpg");
-    background-size:cover;
-    position:fixed;
-    top:100%;
-    left:0;
-    transition:top 0.8s;
-}
-
-/* ####### PAGE Ajout Video ###### */
-
-
-
-/* ####### PAGE Ajout Video ###### */
-
-
-/* ####### PAGE PROJET ###### */
-
-#projet_1{
-    background-image:url("../assets/img/bg_equipe1.jpg");
-    width:100%;
-    background-size:cover;
-    top:0;
-    left:0;
-    position: fixed;
-
-}
-
-#projet_2{
-    background-image:url("../assets/img/bg_equipe2.jpg");
-    width:100%;
-    background-size:cover;
-    top:100%;
-    left:0;
-    position: fixed;
-}
-
-#projet_1 ul li{
-    font-size:35px;
-    position:fixed;
-    top:50%;
-    transform:translate(-50%,-50%);
-}
-
-.title_project{
-    position:fixed;
-    z-index:9000;
-    font-size:50px;
-    top:50%;
-    transition:0.8s;
-}
-
-.title_project ul{
-    list-style:none;
-}
-
-.title_project ul li{
-    cursor:pointer;
-}
-
-.title_project ul li.active{
-    font-size:65px;
-
-}
-
-/* ####### FIN PAGE PROJET ###### */
-
-
-.title_section{
-    margin-top:20%;
-}
-
-.text_section{
-    margin-top:40px;
-    font-size:19px;
-}
-
-
-
-/* ###### DOTSTYLE MENU ###### */
-
-#dotNav {
-    z-index: 5;
-    right: 7%;
-    padding: 7px;
-    padding-top: 12px;
-}
-#dotNav ul {
-    list-style: none;
-    margin:0;
-    position:fixed;
-    right:5%;
-    top:50%;
-    transform:translate(-50%,-50%);
-}
-
-#dotNav li {
-    position: relative;
-    background: none repeat scroll 0 0 #cccccc;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-    margin: 10px 10px 0px 0px;
-    vertical-align:bottom;
-}
-#dotNav li.active {
-    background-color: white;
-    background-image: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
-    background-repeat: repeat-x;
-}
-#dotNav li:hover {
-    background: none repeat scroll 0 0 #EEEEEE;
-}
-#dotNav span{
-    outline: 0;
-    margin-left:35px;
-    color:white;
-
-}
-
-    /* ###### FIN DOTSTYLE MENU ###### */
 
 video{
     z-index: -2;
@@ -217,6 +42,8 @@ video{
     font-size:50px;
     font-weight:700;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
 
 
 #signup-form {
@@ -306,8 +133,9 @@ input::-webkit-input-placeholder {
 }
 
 #RS a {
-    padding:20px;
+    padding:20px 10px;
     color: #fff;
+    font-size: 18px;
     }
 
 video#vid_bg{
@@ -326,13 +154,13 @@ video#vid_bg{
 
 
 footer{
+    position: absolute;
     width: 100%;
+    bottom: 10px;
     font-size:12px;
 }
 
 
-
-/* ########################## MEDIA QUERIES ########################## */
 
 @media(max-width:850px){
     video#vid_bg{
@@ -359,6 +187,11 @@ footer{
 }
 
 @media(max-width:420px) {
+
+    footer{
+        position:inherit;
+        width: 100%;
+    }
 
     .button_news{
         margin-top:10px;
