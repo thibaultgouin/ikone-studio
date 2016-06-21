@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qc-dZR2qLBO8qZOOTdSWnz3HzmPexIJORFHvPYgWjXs" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="IKONE, I KONE, KONE">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <title>Ikone Studio</title>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="main">
+    
+    <!--
+    <div class="onLoggedOut">
+  <h1>Login
+    <form>
+      <input type="email" placeholder="email" required="required"/>
+      <input type="password" placeholder="password" required="required"/>
+      <input type="button" value="Register" class="doRegister"/>
+      <input type="submit" value="Login"/>
+      <input type="button" value="Reset Password" class="doResetPassword"/>
+    </form>
+  </h1>
+</div> -->
+<div class="onLoggedOut">
+  <h1>Login
+    <form>
+      <input type="email" placeholder="email" required="required"/>
+      <input type="password" placeholder="password" required="required"/>
+      <input type="button" value="Register" class="doRegister"/>
+      <input type="submit" value="Login"/>
+      <input type="button" value="Reset Password" class="doResetPassword"/>
+    </form>
+  </h1>
+</div>
+<div class="onTempPassword hidden">
+  <h1>Change Password
+    <form>
+      <input type="password" placeholder="Current Password"/>
+      <input type="password" placeholder="New Password"/>
+      <input type="submit" value="Change Password"/>
+    </form>
+  </h1>
+    </div>
+   
+   <div class="onLoggedIn hidden">
+    <div id="upload" >
+        <form>
+            <input type="video_name" id="video_name" required="required" placeholder="Nom de la video" />
+            <p>
+       <label for="genre">Genre</label><br />
+       <select name="genre" id="genre" required="required">
+           <option value="science-fiction">Science-Fiction</option>
+           <option value="fantastique">Fantastique</option>
+           <option value="drame">Drame</option>
+           <option value="horreur">Horreur</option>
+           <option value="action">Action</option>
+           <option value="aventure">Aventure</option>
+           <option value="humour">Humour</option>
+       </select>
+   </p>
+            <input type="text" id="url" required="required" placeholder="ID de la vidéo">
+            <input class="button_upload" type="submit" id="upload" value="Upload">
+        </form>
+        <button class="doLogout">Logout</button>
+    </div>
+
+   <div class="row" id="list">
+    <h1>Derniere vidéo ajoutée</h1>
+    <div id="player2"></div>
+    <h1>Avant derniere video ajoutée</h1>
+    <div id="player"></div>
+
+    <ul id="liste_videos"></ul>
+       </div>
+    
+    </div>
+
+</div>
+
+
+
+<!-- JS LINK -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="js/login.js"></script>
+<script src="js/script.js"></script>
+<script src="js/dotmenu.js"></script>
+<script src="js/ajout-video.js"></script>
+<script src="js/newsletter.js"></script>
+<script src="dist/sweetalert.min.js"></script>
+<script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
