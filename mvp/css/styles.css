@@ -30,11 +30,9 @@ html {
 
  section{
     text-align: center;
-    color: #fff;
     height:auto!important;
     min-height:100%;
     background-attachment: scroll;
-    background-color:transparent;
     background-size: cover;
     overflow:hidden;
     -webkit-background-size: cover;
@@ -43,8 +41,15 @@ html {
 }
 
 #first_home{
-    background-color:transparent;
     transition:0.8s
+}
+
+.studio_first{
+    background-color:transparent;
+}
+
+.studio_second{
+    background-image:url("../assets/img/bg1.jpg");
 }
 
 #first_home video{
@@ -57,7 +62,6 @@ html {
 #second_home {
     width:100%;
     /*background-color:rosybrown;*/
-    background-image:url("../assets/img/bg1.jpg");
     background-size:cover;
     position:fixed;
     top:100%;
@@ -144,6 +148,29 @@ html {
 
 /* ####### FIN PAGE PROJET ###### */
 
+/* ####### PAGE EQUIPE ###### */
+
+.equipe_first{
+    background-color:black;
+}
+
+.equipe_first h1{
+    width:50%;
+    margin:0 auto;
+    margin-top:20%;
+}
+
+.equipe_second{
+    background-color:grey;
+}
+
+.equipe_second h1{
+    width:60%;
+    margin:0 auto;
+    margin-top:15%;
+}
+
+/* ####### FIN PAGE EQUIPE ###### */
 
 .title_section{
     margin-top:20%;
@@ -154,7 +181,21 @@ html {
     font-size:19px;
 }
 
+.text_equipe{
+    width:70%;
+    margin:0 auto;
+    margin-top:10%;
+    font-size:17px;
+}
 
+.fleche{
+    margin-top:13%;
+}
+
+.fleche:hover{
+    color:grey;
+    cursor:pointer;
+}
 
 /* ###### DOTSTYLE MENU ###### */
 

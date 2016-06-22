@@ -30,7 +30,6 @@ $(document).ready(function () {
             $("#btn-2").removeClass("active");
         }
 
-
     });
 
     $('#trois_home').on('mousewheel DOMMouseScroll MozMousePixelScroll', function (event, delta) {
@@ -82,7 +81,6 @@ $(document).ready(function () {
             $("#btn_project_2").removeClass("active");
             $("#btn_project_1").addClass("active");
         }
-
     });
 
 
@@ -103,6 +101,5 @@ $(document).ready(function () {
         $("#btn_project_1").removeClass("active");
         $("#btn_project_2").addClass("active");
     });
-})
-;
+});
 
