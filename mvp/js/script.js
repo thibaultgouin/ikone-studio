@@ -62,44 +62,77 @@ $(document).ready(function () {
 
     /*PAGE PROJET */
 
-    $('#projet_1').on('mousewheel DOMMouseScroll MozMousePixelScroll', function (event, delta) {
+    var $project = $(".list_projet").children();
+    var indexMax = $project.length;
+
+    var $bgproject = $(".bg_project").children();
+    var projectMax = $bgproject.length;
+    var index = 0;
+    console.log(projectMax);
+
+
+    var nbrProject = 1;
+
+
+    $(document).on('mousewheel DOMMouseScroll MozMousePixelScroll', function (event, delta) {
         if (delta < 0) {
-            $("#projet_1").css("top", "100%");
-            $("#projet_2").css("top", "0");
-            $(".title_project").css("top", "40%");
-            $("#btn_project_1").removeClass("active");
-            $("#btn_project_2").addClass("active");
+            if (index == indexMax - 1) {
+                return;
+            }
+            $bgproject.eq(index).css("top", "100%");
+            $project.eq(index).removeClass("active");
+            index++;
+            $bgproject.eq(index).css("top", "0");
+            $(".title_project").css("top", 50 + (-index * 10) + "%");
+            $project.eq(index).addClass("active");
         }
 
-    });
-
-    $('#projet_2').on('mousewheel DOMMouseScroll MozMousePixelScroll', function (event, delta) {
         if (delta > 0) {
-            $("#projet_1").css("top", "0");
-            $("#projet_2").css("top", "100%");
-            $(".title_project").css("top", "50%");
-            $("#btn_project_2").removeClass("active");
-            $("#btn_project_1").addClass("active");
+            if (index == 0) {
+                return;
+            }
+            $bgproject.eq(index).css("top", "100%");
+            $project.eq(index).removeClass("active");
+            index--;
+            $bgproject.eq(index).css("top", "0");
+            $(".title_project").css("top", 50 - (index * 10) + "%");
+            $project.eq(index).addClass("active");
+        }
+
+    });
+
+    $(".list_projet li").click(function () {
+        nbrProject = $(this).attr("id").replace("btn_project_", "");
+        nbrProject = parseInt(nbrProject);
+
+
+
+        if(index < nbrProject ) {
+            if (index == indexMax - 1) {
+                return;
+            }
+            $bgproject.eq(index).css("top", "100%");
+            $project.eq(index).removeClass("active");
+            index++;
+            $bgproject.eq(index).css("top", "0");
+            $(".title_project").css("top", 50 + (-index * 10) + "%");
+            $project.eq(index).addClass("active");
+        }
+
+        if(index > nbrProject ) {
+            if (index == 0) {
+                return;
+            }
+            $bgproject.eq(index).css("top", "100%");
+            $project.eq(index).removeClass("active");
+            index--;
+            $bgproject.eq(index).css("top", "0");
+            $(".title_project").css("top", 50 - (index * 10) + "%");
+            $project.eq(index).addClass("active");
         }
     });
 
 
-    $("#btn_project_1").click(function () {
-        $("#projet_1").css("top", "0");
-        $("#projet_2").css("top", "100%");
-        $(".title_project").css("top", "50%");
-        $("#btn_project_2").removeClass("active");
-        $("#btn_project_1").addClass("active");
 
-    });
-
-
-    $("#btn_project_2").click(function () {
-        $("#projet_1").css("top", "100%");
-        $("#projet_2").css("top", "0");
-        $(".title_project").css("top", "40%");
-        $("#btn_project_1").removeClass("active");
-        $("#btn_project_2").addClass("active");
-    });
 });
 
