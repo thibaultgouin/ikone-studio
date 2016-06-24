@@ -53,9 +53,9 @@ html {
 }
 
 #first_home video{
-    position: fixed;
-    top:0;
-    left:0;
+    position: fixed;/*enlever si besoin*/
+    top:0;/*enlever si besoin*/
+    left:0;/*enlever si besoin*/
     background-color:black;
 }
 
@@ -63,9 +63,9 @@ html {
     width:100%;
     /*background-color:rosybrown;*/
     background-size:cover;
-    position:fixed;
-    top:100%;
-    left:0;
+    position:fixed;/*enlever si besoin*/
+    top:100%;/*enlever si besoin*/
+    left:0;/*enlever si besoin*/
     transition:top 0.8s;
 }
 
@@ -116,6 +116,7 @@ html {
     top:100%;
     left:0;
     position: fixed;
+
 }
 
 #projet_1 ul li{
@@ -139,7 +140,7 @@ html {
 
 .title_project ul li{
     cursor:pointer;
-    transition:all 0.3s;
+    transition:all 0.8s;
 }
 
 .title_project ul li.active{
@@ -257,6 +258,49 @@ html {
 }
 
     /* ###### FIN DOTSTYLE MENU ###### */
+.wrapper-design{
+    position: relative;
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 3%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.design {
+    position: fixed;
+    height: 200%;
+    width: 100%;
+    left: 0;
+    top: 10%;
+    transition:1.8s;
+}
+
+.design-2{
+    display: block;
+    position: absolute;
+    width: 35%;
+    height: 0;
+    padding: 0 0 30.5%;
+    top: 10%;
+    right: -12.5%;
+    background-image: url(../assets/img/design-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: 9000;
+    transform: translate(0%, 10%) translate3d(0px, 0px, 0px);
+    transition:0.8s;
+}
+
+
+
+
+
+
+
 
 video{
     z-index: -2;
