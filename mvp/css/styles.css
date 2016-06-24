@@ -90,12 +90,6 @@ html {
     transition:top 0.8s;
 }
 
-/* ####### PAGE Ajout Video ###### */
-
-
-
-/* ####### PAGE Ajout Video ###### */
-
 
 /* ####### PAGE PROJET ###### */
 
@@ -217,44 +211,80 @@ html {
 
 /* ###### DOTSTYLE MENU ###### */
 
-#dotNav {
-    z-index: 5;
-    right: 7%;
-    padding: 7px;
-    padding-top: 12px;
-}
-#dotNav ul {
-    list-style: none;
-    margin:0;
+.vertical_nav{
+    background-color:#1a1a1a;
     position:fixed;
-    right:5%;
-    top:50%;
-    transform:translate(-50%,-50%);
+    right:0;
+    top:0;
+    width:16%;
+    height:100%;
+    z-index:10;
 }
 
-#dotNav li {
+.optionMenu i{
+    position:absolute;
+    right:2%;
+    top:3%;
+    color:white;
+    z-index: 9000;
+    cursor:pointer;
+}
+
+.mod-navigation .menuList {
+    background-color: #1a1a1a;
+    display: block;
+    left: 300px;
+    list-style: none;
     position: relative;
-    background: none repeat scroll 0 0 #cccccc;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-    margin: 10px 10px 0px 0px;
+    margin: 0;
+    padding: 96px 0 20px 54px;
+    top: 0;
+    z-index: 4;
+}
+
+.mod-navigation .menuList>li {
+    margin-bottom: 20px
+}
+
+.mod-navigation .menuList>li a {
+    color: #e1e1e1;
+    display: block;
+    font-family: rimowa_headbold, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding-right: 22px;
+    position: relative;
+    white-space: nowrap;
     vertical-align:bottom;
 }
-#dotNav li.active {
-    background-color: white;
-    background-image: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
-    background-repeat: repeat-x;
-}
-#dotNav li:hover {
-    background: none repeat scroll 0 0 #EEEEEE;
-}
-#dotNav span{
-    outline: 0;
-    margin-left:35px;
-    color:white;
 
+
+.mod-navigation .menuList>li a:before {
+    border-radius: 50%;
+    background-color: #282828;
+    content: " ";
+    display: inline-block;
+    height: 11px;
+    width: 11px;
+    position: relative;
+    -webkit-transform: translate(-30px);
+    transform: translate(-30px);
+
+}
+
+.mod-navigation .menuList>li a.active:before {
+    background-color: #e1e1e1;
+}
+
+.mod-navigation .menuList>li a>span {
+    display: block;
+}
+
+.mod-navigation.open .menuList {
+    left: 0;
+    -webkit-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
 }
 
     /* ###### FIN DOTSTYLE MENU ###### */
@@ -467,3 +497,59 @@ footer{
     }
 
 }
+
+
+/* A SUPPRIMER ***************/
+/*
+#dotNav{
+    z-index: 5;
+    right: 7%;
+    padding: 7px;
+    padding-top: 12px;
+}
+
+#dotNav a{
+    color:white;
+    margin-left:40px;
+    width:40px;
+    font-size: 17px;
+    bottom: 4px;
+    position: relative;
+}
+
+#dotNav ul {
+    list-style: none;
+    margin:0;
+    position:fixed;
+    right:11%;
+    top:20%;
+    transform:translate(-50%,-50%);
+}
+
+
+#dotNav li {
+    position: relative;
+    background: none repeat scroll 0 0 #cccccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 10px 10px 0px 0px;
+    vertical-align:top;
+
+}
+
+#dotNav li.active {
+    background-color: white;
+    background-image: -moz-linear-gradient(center top , #FFFFFF, #EEEEEE);
+    background-repeat: repeat-x;
+}
+#dotNav li:hover {
+    background: none repeat scroll 0 0 #EEEEEE;
+}
+#dotNav span{
+    outline: 0;
+    margin-left:35px;
+    color:white;
+}
+*/
