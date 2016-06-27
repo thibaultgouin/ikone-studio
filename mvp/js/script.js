@@ -111,6 +111,9 @@ $(document).ready(function () {
 
         }
 
-    })
-    ;
+   /* if ($(window).width() < 548) {
+        $("nav").removeClass("open");
+    }*/
+
+    });
 
