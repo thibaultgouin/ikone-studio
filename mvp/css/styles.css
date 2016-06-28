@@ -40,8 +40,15 @@ html {
     -o-background-size: cover;
 }
 
+
+#logo-mobile{
+    display:none;
+}
+
+
 #first_home{
-    transition:0.8s
+    transition:0.8s;
+    background-color:#1d1e22;
 }
 
 .studio_first{
@@ -200,7 +207,75 @@ html {
     font-size:17px;
 }
 
+/* ###### MOUSE EFFET ###### */
 
+.mouse-wrapper {
+    opacity: 1;
+}
+
+.mod-section-home div.mouse-wrapper .mouse {
+    bottom: 35px;
+    position: absolute;
+    display: inline-block;
+    width: 23px;
+    height: 37px;
+    background-image: url("../assets/img/mouse.png");
+    background-size: 100%;
+    left: 50%;
+    margin-left: -11px;
+}
+
+.mod-section-home div.mouse-wrapper .mouse>span.dot {
+    width: 5px;
+    height: 8px;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+    animation-fill-mode: forwards;
+    -webkit-animation: Kb 1.2s infinite;
+    animation: Kb 1.2s infinite;
+    -webkit-animation-fill-mode: forwards;
+
+}
+
+.mod-section-home div.mouse-wrapper.animout {
+    -webkit-animation: Jb 1s 1;
+    animation: Jb 1s 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.mod-section-home div.mouse-wrapper.anim {
+    -webkit-animation: Pb 1s 1s 1;
+    animation: Pb 1s 1s 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+.mod-section-home div.mouse-wrapper.anim-finish {
+    opacity: 1
+}
+
+@-webkit-keyframes Kb {
+    0% {
+        opacity: .2;
+        -webkit-transform: translateY(3px);
+        transform: translateY(3px)
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(10px);
+        transform: translateY(10px)
+    }
+    to {
+        opacity: 0;
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px)
+    }
+}
+
+/* ###### FIN MOUSE EFFET ###### */
 
 /* ###### DOTSTYLE MENU ###### */
 
@@ -553,6 +628,13 @@ html {
     height:100%;
 }
 
+.img_middle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 
 
 video{
@@ -673,7 +755,8 @@ video#vid_bg{
 
 @media(max-width:548px) {
 
-    #logo{
+    #logo-mobile{
+        display:block;
         width:130px;
         height:42px;
     }
