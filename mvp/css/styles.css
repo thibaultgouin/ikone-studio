@@ -56,7 +56,7 @@ html {
 }
 
 .studio_second{
-    background-image:url("../assets/img/bg1.jpg");
+    background-image:url("../assets/img/bg-section1.jpg");
 }
 
 #first_home video{
@@ -79,7 +79,7 @@ html {
 #trois_home {
     width:100%;
    /* background-color:#17423C;*/
-    background-image:url("../assets/img/bg2.jpg");
+    background-color:#191f27;
     background-size:cover;
     position:fixed;
     top:100%;
@@ -199,6 +199,69 @@ html {
     margin-top:40px;
     font-size:19px;
 }
+/* ###### SECTION 1 ###### */
+
+
+.global_text_section1{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.title_section_1{
+    margin:0 auto;
+    color:white;
+    font-size:27px;
+}
+
+.text_section_1{
+    color:white;
+    font-size:16px;
+    margin-top:40px;
+}
+
+.button_section_player{
+    width: 280px;
+    font-size: 20px;
+    margin:0 auto;
+    margin-top:40px;
+    padding:16px 25px 16px 25px;
+    border:2px #dac9ae solid;
+    color:#dac9ae;
+    background:none;
+    cursor:pointer;
+    text-align:center;
+}
+
+
+.btn_section_player img{
+    margin-left:20px;
+    margin-bottom:3px;
+}
+
+
+.img_middle_section_first{
+    background-image:url("../assets/img/circle-white.png");
+    background-repeat:no-repeat;
+    width:600px;
+    height:600px;
+    position:absolute;
+    top:53%;
+    left:51%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.logo-small{
+    display:block;
+    margin-top:30px;
+    margin-left:30px;
+}
+
+
+
+/* ###### FIN SECTION 1 ###### */
+
 
 .text_equipe{
     width:70%;
@@ -629,11 +692,13 @@ html {
 }
 
 .img_middle{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%) scale(1);
-}
+     position:absolute;
+     top:50%;
+     left:50%;
+     transform: translate(-50%, -50%) scale(1);
+ }
+
+
 
 
 
@@ -710,26 +775,7 @@ input::-webkit-input-placeholder {
 
 * {  -moz-box-sizing: border-box; box-sizing: border-box;}
 
-.button_news{
-    font-family: Georgia, serif;
-    border: 1px solid #fff;
-    color: rgb(50, 50, 50);
-    padding: 5px 0;
-    text-align: center;
-    box-shadow: none;
-    font-size: 13px;
-    width: 150px;
-    margin-left: -5px;
-    background-color: rgba(255, 255, 255, 1);
-    line-height: 20px;
-}
 
-.button_news:hover{
-    color: rgb(45, 45, 45);
-    background: rgba(255, 255, 255, 1);
-    transition: background 0,10s;
-    transition: color 0,1s;
-}
 
 
 video#vid_bg{
@@ -751,46 +797,44 @@ video#vid_bg{
 
 /* ########################## MEDIA QUERIES ########################## */
 
-
-
 @media(max-width:548px) {
 
-    #logo-mobile{
-        display:block;
-        width:130px;
-        height:42px;
+    #logo-mobile {
+        display: block;
+        width: 130px;
+        height: 42px;
     }
 
-    #first_home video{
-        background-color:black;
+    #first_home video {
+        background-color: black;
         position: absolute;
-        top:0;/*enlever si besoin*/
-        left:0;
+        top: 0; /*enlever si besoin*/
+        left: 0;
 
     }
+
     #second_home {
-        width:100%;
-        background-size:cover;
-        position:inherit;
-        transition:top 0.8s;
+        width: 100%;
+        background-size: cover;
+        position: inherit;
+        transition: top 0.8s;
     }
 
     #trois_home {
-        width:100%;
-        background-image:url("../assets/img/bg2.jpg");
-        background-size:cover;
-        position:inherit;
-        transition:top 0.8s;
+        width: 100%;
+        background-image: url("../assets/img/bg2.jpg");
+        background-size: cover;
+        position: inherit;
+        transition: top 0.8s;
     }
 
     #quatre_home {
-        width:100%;
-        background-image:url("../assets/img/bg3.jpg");
-        background-size:cover;
-        position:inherit;
-        transition:top 0.8s;
+        width: 100%;
+        background-image: url("../assets/img/bg3.jpg");
+        background-size: cover;
+        position: inherit;
+        transition: top 0.8s;
     }
-
 
     /* ###### MENU POUR MOBILE ###### */
     .mod-navigation {
@@ -800,7 +844,7 @@ video#vid_bg{
         transition: all .4s ease-in-out;
         position: fixed;
         right: 0;
-        height: 100%!important;
+        height: 100% !important;
         width: 0px;
     }
 
@@ -815,29 +859,28 @@ video#vid_bg{
 
     }
 
-    .mod-navigation .menuList>li a:before {
+    .mod-navigation .menuList > li a:before {
         display: none;
     }
 
-    .mod-navigation .menuList>li a {
+    .mod-navigation .menuList > li a {
         color: #e1e1e1;
         display: block;
         font-family: "Raleway", sans-serif;
         font-size: 14px;
         line-height: 20px;
         text-transform: uppercase;
-        margin-left:20px;
+        margin-left: 20px;
         position: relative;
         white-space: nowrap;
-        vertical-align:bottom;
-        font-weight:600;
-        text-decoration:none;
-        outline : none;
+        vertical-align: bottom;
+        font-weight: 600;
+        text-decoration: none;
+        outline: none;
     }
 
-
-    .mod-navigation .socialNet{
-        width:100%;
+    .mod-navigation .socialNet {
+        width: 100%;
         left: 700px;
         margin: 0;
         padding: 0;
@@ -847,46 +890,32 @@ video#vid_bg{
         z-index: 4;
     }
 
-    .mod-navigation .socialNet>li{
+    .mod-navigation .socialNet > li {
         list-style-type: none;
         margin: 0;
         display: inline-block;
-        width:20%;
-
+        width: 20%;
 
     }
 
-    .mod-navigation .socialNet>li a{
-        color:white;
+    .mod-navigation .socialNet > li a {
+        color: white;
         font-size: 14px;
         position: inherit;
         -webkit-transition: all .35s ease-in-out;
         transition: all .35s ease-in-out;
-        outline : none;
+        outline: none;
     }
 
     .mod-navigation.open .socialNet {
-        width:100%;
-        margin:0 auto;
-        margin-left:25px;
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 25px;
         -webkit-transition: all .8s ease-in-out;
         transition: all .8s ease-in-out;
     }
-
+}
 
     /* ###### FIN MENU POUR MOBILE ###### */
 
 
-    .fleche{
-        display:none;
-    }
-
-}
-
-@media(max-width:420px) {
-
-    .button_news{
-        margin-top:10px;
-    }
-
-}

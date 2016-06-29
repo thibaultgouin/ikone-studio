@@ -36,6 +36,7 @@ $(document).ready(function () {
 
             if (delta < 0) {
                 homeDown();
+
             }
 
 
@@ -111,9 +112,9 @@ $(document).ready(function () {
 
         }
 
-   /* if ($(window).width() < 548) {
-        $("nav").removeClass("open");
-    }*/
+
+
+
 
     });
 
