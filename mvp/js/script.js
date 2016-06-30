@@ -90,6 +90,8 @@ $(document).ready(function () {
             index++;
             $bghome.eq(index).css("top", "0");
             $menuDotMenu.eq(index).find('a').addClass("active");
+            $bghome.removeClass("current");
+            $bghome.eq(index).addClass("current");
             setTimeout(function () {
                 scrollTime = true;
             }, 1000);
@@ -106,6 +108,8 @@ $(document).ready(function () {
             index--;
             $bghome.eq(index).css("top", "0");
             $menuDotMenu.eq(index).find('a').addClass("active");
+            $bghome.removeClass("current");
+            $bghome.eq(index).addClass("current");
             setTimeout(function () {
                 scrollTime = true;
             }, 1000);

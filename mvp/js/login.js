@@ -3,7 +3,6 @@ $(document).ready(function () {
 
 var FIREBASE_URL = 'https://ykone.firebaseio.com';
 var fb = new Firebase(FIREBASE_URL);
-var API_URL = 'http://www.omdbapi.com/?';
 var initLoad = true;
 
 $('.onLoggedIn form').submit(function () {
