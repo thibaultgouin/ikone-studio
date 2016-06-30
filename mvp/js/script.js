@@ -29,7 +29,9 @@ $(document).ready(function () {
 
         setTimeout(function () {
         $("#loading_home").css("margin-left","100%");
-        }, 3500);
+            $bghome.eq(index).addClass("current");
+        }, 3500);//3500
+
     });
 
 
@@ -62,12 +64,11 @@ $(document).ready(function () {
         if (index < nbrHome) {
             scrollTime = false;
             $menuDotMenu.eq(index).find('a').removeClass("active");
-            index++;
-            $bghome.eq(index).css("top", "0");
-            $menuDotMenu.eq(index).find('a').addClass("active");
-            $bghome.removeClass("current");
-            $bghome.eq(index).addClass("current");
-
+                index++;
+                $bghome.eq(index).css("top", "0");
+                $menuDotMenu.eq(index).find('a').addClass("active");
+                $bghome.removeClass("current");
+                $bghome.eq(index).addClass("current");
             setTimeout(function () {
                 scrollTime = true;
             }, 1000);
@@ -91,6 +92,34 @@ $(document).ready(function () {
     });
 
 
+    /*if (index < nbrHome) {
+     scrollTime = false;
+     $menuDotMenu.eq(index).find('a').removeClass("active");
+     $menuDotMenu.eq(index - 1).find('a').removeClass("active");
+     $bghome.eq(nbrHome - 1).css("top", "0");
+     $menuDotMenu.eq(nbrHome - 1).find('a').addClass("active");
+     index = nbrHome - 1;
+     setTimeout(function () {
+     scrollTime = true;
+     }, 1000);
+
+     }*/
+
+
+    /*if (index >= nbrHome) {
+     scrollTime = false;
+     $bghome.eq(index).css("top", "100%");
+     $menuDotMenu.eq(index).find('a').removeClass("active");
+     $menuDotMenu.eq(index - 1).find('a').removeClass("active");
+     $bghome.eq(nbrHome - 1).css("top", "0");
+     $menuDotMenu.eq(nbrHome - 1).find('a').addClass("active");
+     index = nbrHome - 1;
+     setTimeout(function () {
+     scrollTime = true;
+     }, 1000);
+     }*/
+
+
     function homeDown() {
         if (index == homeMax - 1 || scrollTime == false) {
             return;
@@ -100,6 +129,8 @@ $(document).ready(function () {
         index++;
         $bghome.eq(index).css("top", "0");
         $menuDotMenu.eq(index).find('a').addClass("active");
+        $bghome.removeClass("current");
+        $bghome.eq(index).addClass("current");
         setTimeout(function () {
             scrollTime = true;
         }, 1000);
@@ -116,6 +147,8 @@ $(document).ready(function () {
         index--;
         $bghome.eq(index).css("top", "0");
         $menuDotMenu.eq(index).find('a').addClass("active");
+        $bghome.removeClass("current");
+        $bghome.eq(index).addClass("current");
         setTimeout(function () {
             scrollTime = true;
         }, 1000);
@@ -143,10 +176,6 @@ $(document).ready(function () {
         $("#name_sentiment").text('COLERE');
     });
 
-    $(".button_section_player").click(function () {
-        homeDown();
-
-    });
 
 
 });
