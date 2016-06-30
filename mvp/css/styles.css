@@ -324,8 +324,45 @@ section {
 
 /* ###### FIN SECTION 2 : EXPERT ###### */
 
-.section_team {
-    margin-top: 10%;
+
+.img_middle_section_first{
+    background-image:url("../assets/img/circle-white.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    width:580px;
+    height:580px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transition: all 2s ease;
+    transform: translate(-50%, -50%)  rotate(0deg) scale(0);
+    transform-origin: center center;
+}
+/*
+@keyframes scaleC {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1)
+    }
+}
+*/
+.current .img_middle_section_first.c1 {
+    transform: translate(-50%, -50%) rotate(0deg)  scale(1);
+}
+.current .img_middle_section_first.c2 {
+
+    transform: translate(-50%, -50%) rotate(-4deg) scale(.982) ;
+}
+.current .img_middle_section_first.c3 {
+
+    transform: translate(-50%, -50%) rotate(-6deg) scale(.98) ;
+}
+.current .img_middle_section_first.c4 {
+
+    transform: translate(-50%, -50%) rotate(-7deg) scale(.978) ;
+>>>>>>> 819eec276e31522a729e8d529fdbd9909275379a
 }
 
 .section_team h2 {
@@ -820,9 +857,9 @@ video {
     font-size: 17px;
 }
 
-#name {
+/* #name {
     display: none;
-}
+} */
 
 #signup-form input[type="text"], #signup-form input[type="email"] {
 

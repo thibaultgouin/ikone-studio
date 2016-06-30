@@ -62,10 +62,12 @@ $(document).ready(function () {
         if (index < nbrHome) {
             scrollTime = false;
             $menuDotMenu.eq(index).find('a').removeClass("active");
-            $menuDotMenu.eq(index - 1).find('a').removeClass("active");
-            $bghome.eq(nbrHome - 1).css("top", "0");
-            $menuDotMenu.eq(nbrHome - 1).find('a').addClass("active");
-            index = nbrHome - 1;
+            index++;
+            $bghome.eq(index).css("top", "0");
+            $menuDotMenu.eq(index).find('a').addClass("active");
+            $bghome.removeClass("current");
+            $bghome.eq(index).addClass("current");
+
             setTimeout(function () {
                 scrollTime = true;
             }, 1000);
@@ -76,10 +78,11 @@ $(document).ready(function () {
             scrollTime = false;
             $bghome.eq(index).css("top", "100%");
             $menuDotMenu.eq(index).find('a').removeClass("active");
-            $menuDotMenu.eq(index - 1).find('a').removeClass("active");
-            $bghome.eq(nbrHome - 1).css("top", "0");
-            $menuDotMenu.eq(nbrHome - 1).find('a').addClass("active");
-            index = nbrHome - 1;
+            index--;
+            $bghome.eq(index).css("top", "0");
+            $menuDotMenu.eq(index).find('a').addClass("active");
+            $bghome.removeClass("current");
+            $bghome.eq(index).addClass("current");
             setTimeout(function () {
                 scrollTime = true;
             }, 1000);
