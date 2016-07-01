@@ -30,7 +30,7 @@ $(document).ready(function () {
         setTimeout(function () {
         $("#loading_home").css("margin-left","100%");
             $bghome.eq(index).addClass("current");
-        }, 3500);//3500
+        }, 10);//2000
 
     });
 
@@ -64,11 +64,10 @@ $(document).ready(function () {
         if (index < nbrHome) {
             scrollTime = false;
             $menuDotMenu.eq(index).find('a').removeClass("active");
-                index++;
-                $bghome.eq(index).css("top", "0");
-                $menuDotMenu.eq(index).find('a').addClass("active");
-                $bghome.removeClass("current");
-                $bghome.eq(index).addClass("current");
+            $menuDotMenu.eq(index - 1).find('a').removeClass("active");
+            $bghome.eq(nbrHome - 1).css("top", "0");
+            $menuDotMenu.eq(nbrHome - 1).find('a').addClass("active");
+            index = nbrHome - 1;
             setTimeout(function () {
                 scrollTime = true;
             }, 1000);
@@ -79,11 +78,10 @@ $(document).ready(function () {
             scrollTime = false;
             $bghome.eq(index).css("top", "100%");
             $menuDotMenu.eq(index).find('a').removeClass("active");
-            index--;
-            $bghome.eq(index).css("top", "0");
-            $menuDotMenu.eq(index).find('a').addClass("active");
-            $bghome.removeClass("current");
-            $bghome.eq(index).addClass("current");
+            $menuDotMenu.eq(index - 1).find('a').removeClass("active");
+            $bghome.eq(nbrHome - 1).css("top", "0");
+            $menuDotMenu.eq(nbrHome - 1).find('a').addClass("active");
+            index = nbrHome - 1;
             setTimeout(function () {
                 scrollTime = true;
             }, 1000);
@@ -92,32 +90,33 @@ $(document).ready(function () {
     });
 
 
-    /*if (index < nbrHome) {
-     scrollTime = false;
-     $menuDotMenu.eq(index).find('a').removeClass("active");
-     $menuDotMenu.eq(index - 1).find('a').removeClass("active");
-     $bghome.eq(nbrHome - 1).css("top", "0");
-     $menuDotMenu.eq(nbrHome - 1).find('a').addClass("active");
-     index = nbrHome - 1;
-     setTimeout(function () {
-     scrollTime = true;
-     }, 1000);
-
-     }*/
+  /*  if (index < nbrHome) {
+        scrollTime = false;
+        $menuDotMenu.eq(index).find('a').removeClass("active");
+        index++;
+        $bghome.eq(index).css("top", "0");
+        $menuDotMenu.eq(index).find('a').addClass("active");
+        $bghome.removeClass("current");
+        $bghome.eq(index).addClass("current");
+        setTimeout(function () {
+            scrollTime = true;
+        }, 1000);
 
 
     /*if (index >= nbrHome) {
-     scrollTime = false;
-     $bghome.eq(index).css("top", "100%");
-     $menuDotMenu.eq(index).find('a').removeClass("active");
-     $menuDotMenu.eq(index - 1).find('a').removeClass("active");
-     $bghome.eq(nbrHome - 1).css("top", "0");
-     $menuDotMenu.eq(nbrHome - 1).find('a').addClass("active");
-     index = nbrHome - 1;
-     setTimeout(function () {
-     scrollTime = true;
-     }, 1000);
-     }*/
+        scrollTime = false;
+        $bghome.eq(index).css("top", "100%");
+        $menuDotMenu.eq(index).find('a').removeClass("active");
+        index--;
+        $bghome.eq(index).css("top", "0");
+        $menuDotMenu.eq(index).find('a').addClass("active");
+        $bghome.removeClass("current");
+        $bghome.eq(index).addClass("current");
+        setTimeout(function () {
+            scrollTime = true;
+        }, 1000);
+    }*/
+
 
 
     function homeDown() {
@@ -129,8 +128,6 @@ $(document).ready(function () {
         index++;
         $bghome.eq(index).css("top", "0");
         $menuDotMenu.eq(index).find('a').addClass("active");
-        $bghome.removeClass("current");
-        $bghome.eq(index).addClass("current");
         setTimeout(function () {
             scrollTime = true;
         }, 1000);
@@ -147,33 +144,15 @@ $(document).ready(function () {
         index--;
         $bghome.eq(index).css("top", "0");
         $menuDotMenu.eq(index).find('a').addClass("active");
-        $bghome.removeClass("current");
-        $bghome.eq(index).addClass("current");
         setTimeout(function () {
             scrollTime = true;
         }, 1000);
 
     }
-
-
-    $("#senti-1").click(function () {
-        $("#name_sentiment").text('LA JOIE');
-    });
-
-    $("#senti-2").click(function () {
-        $("#name_sentiment").text('PEUR');
-    });
-
-    $("#senti-3").click(function () {
-        $("#name_sentiment").text('TRISTESSE');
-    });
-
-    $("#senti-4").click(function () {
-        $("#name_sentiment").text('AMOUR');
-    });
-
-    $("#senti-5").click(function () {
-        $("#name_sentiment").text('COLERE');
+    $(".senti_btn").on('click', function (e) {
+        $('#name_sentiment').html(  $('<h1 class="emotion">'+ $(this).attr('alt') +'</h1>')  );
+        $(".img-experience").css("background-image",$(this).data('background'));
+        $(".btn-experience").find('a').attr("href", $(this).attr('alt') + '.html');
     });
 
 
