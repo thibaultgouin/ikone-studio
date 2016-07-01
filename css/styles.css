@@ -160,6 +160,54 @@ footer{
     font-size:12px;
 }
 
+#loading_home {
+    height: 100% !important;
+    width: 100%;
+    background-color: #1d1e22;
+    background-size: cover;
+    position: fixed; /*enlever si besoin*/
+    top: 0; /*enlever si besoin*/
+    left: 0; /*enlever si besoin*/
+    transition: all 1.5s;
+    z-index:900000;
+}
+
+#loadCercle{
+    animation: rotate 5s infinite linear;
+}
+@keyframes rotate{ 0%{ transform: translate(-50%, -50%) rotate(0deg);} 100%{transform: translate(-50%, -50%) rotate(360deg);}}
+
+.img_middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.logo-small {
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+.text_section_1 {
+    color: white;
+    font-size: 18px;
+    width:70%;
+    margin:0 auto;
+    margin-top: 40px;
+
+}
+.global_text_section1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
 
 
 @media(max-width:850px){
