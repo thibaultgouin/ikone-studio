@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html>
+  <head>
+    <!--[if IE 8]><script src="http://vjs.zencdn.net/ie8/1.1.0/videojs-ie8.min.js"></script><!--<![endif]-->
+    <link rel='stylesheet' href='node_modules/video.js/dist/video-js.css'>
+    <link rel="stylesheet" href="css/sublime.css">
+    <script src='node_modules/video.js/dist/video.js'></script>
+    <script src="js/es5-shim.js"></script>
+
+    <!-- include the playlist plugin -->
+    <script src='js/bundle.js'></script>
+    <link rel='stylesheet' href='css/bundle.css'>
+
+
+  </head>
+
+  <body>
+
+
+    <video
+    id="vid1"
+    class="video-js vjs-sublime-skin"
+    controls
+    width="640" height="264"
+    data-setup='{ "playbackRates": [1, 1.5, 2] }'>
+    <source src="assets/video/bg.mp4" type='video/mp4' />
+    <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+  </video>
+
+    <video
+            id="vid2"
+            class="video-js vjs-sublime-skin"
+            controls
+            width="640" height="264"
+            data-setup='{ "playbackRates": [1, 1.5, 2] }'>
+      <source src="assets/video/ds.mp4" type='video/mp4' />
+      <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+    </video>
+
+
+
+  <button id="startVideoBtn">
+  View Fullscreen!
+</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    $(function () {
+
+
+      //var v = $("#vid1");
+
+      //check if video is ready to play
+      $('video').on('canplay', function(){
+        $(this).mouseenter(function(){
+          $(this).get(0).play();
+        }).mouseleave(function(){
+          $(this).get(0).pause();
+        })
+      });
+
+
+    })
+  </script>
+
+    <script src="node_modules/video.js/dist/video.min.js"></script>
+    </body>
+</html>

@@ -91,6 +91,18 @@ $(document).ready(function () {
 
     });
 
+    ///// BOUTON PLAY //////
+
+   /* $("#imgplayer").hover(
+        function(){
+            $(this).attr('src',"assets/img/btn-play-video-blanc.png");
+        },
+        function(){
+            $(this).attr('src',"assets/img/btn-play-video.png");
+        }); */
+
+    ///// FIN BOUTON PLAY //////
+
 
     /*if (index < nbrHome) {
      scrollTime = false;
