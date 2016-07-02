@@ -126,6 +126,15 @@ section {
     background-color: #161c23;
 }
 
+#six_home {
+    width: 100%;
+    background-color: #161c23;
+    background-size: cover;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    transition: top 0.8s;
+}
 /* ####### PAGE PROJET ###### */
 
 #projet_1 {
@@ -265,6 +274,12 @@ section {
     border: 2px #eedecb solid;
 }
 
+.button_section_player:active{
+    color: #ffffff;
+    background-color: #c9b2a0;
+    border: 2px #c9b2a0 solid;
+}
+
 #imgplayer{
     display: inline-block;
     width: 32px;
@@ -277,6 +292,10 @@ section {
 }
 .button_section_player:hover #imgplayer {
     border: 2px #fff solid;
+}
+
+.button_section_player:active #imgplayer {
+    border: 2px #c9b2a0 solid;
 }
 
 .btn-experience a{
@@ -373,6 +392,7 @@ section {
 
 /* ###### FIN SECTION 2 : EXPERT ###### */
 
+/* ###### ANIM CERCLE SECTION 1 ###### */
 
 .img_middle_section_first{
     background-image:url("../assets/img/circle-white.png");
@@ -389,14 +409,15 @@ section {
 }
 /*
 @keyframes scaleC {
-    0% {
-        transform: translate(-50%, -50%) scale(0);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1)
-    }
+0% {
+transform: translate(-50%, -50%) scale(0);
+}
+100% {
+transform: translate(-50%, -50%) scale(1)
+}
 }
 */
+
 .current .img_middle_section_first.c1 {
     transform: translate(-50%, -50%) rotate(0deg)  scale(1);
 }
@@ -414,6 +435,51 @@ section {
 
 }
 
+/* ###### FIN ANIM CERCLE SECTION 1 ###### */
+
+
+/* ###### ANIM CERCLE SECTION CONTACT ###### */
+
+
+
+.img_middle_section_six{
+    background-image:url("../assets/img/circle-white.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    width:580px;
+    height:580px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transition: all 2s ease;
+    transform: translate(-50%, -50%)  rotate(0deg) scale(0);
+    transform-origin: center center;
+
+}
+
+/*
+
+.current .img_middle_section_six.c1 {
+    transform: translate(-50%, -50%) rotate(0deg)  scale(1);
+}
+.current .img_middle_section_six.c2 {
+
+    transform: translate(-50%, -50%) rotate(-4deg) scale(.982) ;
+}
+.current .img_middle_section_six.c3 {
+
+    transform: translate(-50%, -50%) rotate(-6deg) scale(.98) ;
+}
+.current .img_middle_section_six.c4 {
+
+    transform: translate(-50%, -50%) rotate(-7deg) scale(.978) ;
+
+}
+
+*/
+
+/* ###### FIN ANIM CERCLE SECTION CONTACT ###### */
+
 .section_team h2 {
     color: #cfb995;
 }
@@ -424,6 +490,141 @@ section {
 
 
 /* ###### FIN SECTION 3 : TEAM ###### */
+
+/* ###### SECTION 4 ###### */
+
+
+
+/* ###### FIN SECTION 4 ###### */
+
+/* ###### SECTION 6 ###### */
+
+.global_text_section6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.title_section_6 {
+    margin: 0 auto;
+    color: white;
+    font-size: 27px;
+}
+
+.text_section_6 {
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+    text-align:center;
+}
+
+.button_section_contact {
+    width: 280px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 16px 25px 16px 25px;
+    border: 2px #dac9ae solid;
+    color: #dac9ae;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button_section_contact:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #eedecb;
+    border: 2px #eedecb solid;
+}
+
+.button_section_contact:active{
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #c9b2a0;
+    border: 2px #c9b2a0 solid;
+}
+
+#lien-contact {
+    text-decoration: none;
+}
+
+#lien-contact:hover {
+    text-decoration: none;
+}
+
+#imgplayer{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px #dac9ae solid;
+    line-height: 32px;
+    margin-left: 8px;
+    /* padding-left: 4px; */
+}
+.button_section_player:hover #imgplayer {
+    border: 2px #fff solid;
+}
+
+.btn-experience a{
+    color:white;
+}
+
+.btn-experience a:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.btn-experience{
+    width: 280px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 16px 25px 16px 25px;
+    border: 2px #dac9ae solid;
+    color: #dac9ae;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.btn_section_player img {
+    margin-left: 20px;
+    margin-bottom: 3px;
+}
+
+.img_middle_section_six {
+    background-image:url("../assets/img/circle-white.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    width:580px;
+    height:580px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform-origin: center center;
+}
+
+.logo-small {
+    position:absolute;
+    z-index:9000;
+    display: block;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+
+
+/* ###### FIN SECTION 6 ###### */
 
 /* ###### PAGE EXPERIENCE ###### */
 
@@ -1004,7 +1205,7 @@ video#vid_bg {
 }
 
 
-.button_section_contact {
+.button_section_send {
     width: 280px;
     font-size: 20px;
     margin: 0 auto;
@@ -1078,6 +1279,14 @@ video#vid_bg {
     }
 
     #cinq_home {
+        width: 100%;
+        background-color: #161c23;
+        background-size: cover;
+        position: inherit;
+        transition: top 0.8s;
+    }
+
+    #six_home {
         width: 100%;
         background-color: #161c23;
         background-size: cover;
