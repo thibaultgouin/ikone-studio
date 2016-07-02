@@ -28,6 +28,63 @@ $(document).ready(function(){
        
     });
 
+    ////// FORMULAIRE DYNAMIQUE ///////
+
+    var InputFocusIn = function (labelID) {
+        $(labelID).removeClass("unfocused");
+        $(labelID).addClass("focused");
+    };
+
+    var InputFocusOut = function (inputID, labelID) {
+        if(!$(inputID).val()) {
+            $(inputID).addClass("unfocused");
+            $(inputID).removeClass("focused");
+            $(inputID).removeClass("valid-content");
+        } else {
+            $(inputID).addClass("valid-content");
+        }
+    };
+
+    $("#nom").focus( function() {
+        InputFocusIn("#nom");
+    });
+    $("#prenom").focus( function() {
+        InputFocusIn("#prenom");
+    });
+    $("#email").focus( function() {
+        InputFocusIn("#email");
+    });
+
+    $("#objet").focus( function() {
+        InputFocusIn("#objet");
+    });
+
+    $("#message").focus( function() {
+        InputFocusIn('#message');
+    })
+
+    $("#nom").focusout( function() {
+        InputFocusOut("#nom");
+    });
+    $("#prenom").focusout( function() {
+        InputFocusOut("#prenom");
+    });
+    $("#email").focusout( function() {
+        InputFocusOut("#email");
+    });
+
+    $("#objet").focusout( function() {
+        InputFocusOut("#objet");
+    });
+
+    $("#message").focusout( function() {
+        InputFocusOut("#message");
+    });
+
+
+    //////// FIN FORMULAIRE DYNAMIQUE ////////
+
+
     $("#contactForm").on('keyup', function(){
         verif_champ();
     });

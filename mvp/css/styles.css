@@ -196,7 +196,7 @@ section {
 .equipe_first h1 {
     width: 50%;
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 .equipe_second {
@@ -213,12 +213,48 @@ section {
 
 /* ####### PAGE CONTACT ###### */
 
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(30,30,40); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+    color: #818181 ;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    border-color: #808183 ;
+    font-size: 18px;
+    border-width: 0 0 2px 0;
+    line-height: 22px;
+    background-color: transparent;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
 .text_contact {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .text_contact p {
     font-size: 17px;
+}
+
+
+
+.focused {
+    color: #cecece;
+    border-color: #cecece;
 }
 
 /* ####### FIN PAGE CONTACT ###### */
@@ -382,6 +418,23 @@ section {
     background: none;
     cursor: pointer;
     text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button_section_expert:hover{
+    color: #ffffff;
+    background-color: #eedecb;
+    border: 2px #eedecb solid;
+}
+
+.button_section_expert:active{
+    color: #ffffff;
+    background-color: #c9b2a0;
+    border: 2px #c9b2a0 solid;
 }
 
 .title_section {
@@ -1163,10 +1216,10 @@ video {
     font-family: Georgia, serif;
 }
 
-input[type="text"]:focus, input[type="email"]:focus {
+/* input[type="text"]:focus, input[type="email"]:focus {
     outline: none;
 
-}
+} */
 
 input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.8);
@@ -1209,7 +1262,7 @@ video#vid_bg {
     width: 280px;
     font-size: 20px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 16px 25px 16px 25px;
     border: 2px #dac9ae solid;
     color: #dac9ae;
@@ -1223,11 +1276,11 @@ video#vid_bg {
     transition: all 0.5s;
 }
 
-.button_section_contact:disabled {
+.button_section_send:disabled {
     width: 280px;
     font-size: 20px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 16px 25px 16px 25px;
     border: 2px #818181 solid;
     color: #818181;
