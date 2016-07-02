@@ -273,7 +273,7 @@ section {
     border: 2px #dac9ae solid;
     line-height: 32px;
     margin-left: 8px;
-    padding-left: 4px;
+   /* padding-left: 4px; */
 }
 .button_section_player:hover #imgplayer {
     border: 2px #fff solid;
@@ -1012,6 +1012,24 @@ video#vid_bg {
     padding: 16px 25px 16px 25px;
     border: 2px #dac9ae solid;
     color: #dac9ae;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.button_section_contact:disabled {
+    width: 280px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 16px 25px 16px 25px;
+    border: 2px #818181 solid;
+    color: #818181;
     background: none;
     cursor: pointer;
     text-align: center;
