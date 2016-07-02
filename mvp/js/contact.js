@@ -8,7 +8,7 @@ $(document).ready(function(){
         e.preventDefault();
         var email = $("#email").val();
         var objet = $("#objet").val();
-        var nom = $("#name").val();
+        var nom = $("#nom").val();
         var prenom = $("#prenom").val();
         var message = $("#message").val();
 
