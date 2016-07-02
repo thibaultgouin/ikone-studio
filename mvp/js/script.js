@@ -30,7 +30,7 @@ $(document).ready(function () {
         setTimeout(function () {
         $("#loading_home").css("margin-left","100%");
             $bghome.eq(index).addClass("current");
-        }, 0);//2000
+        }, 2000);//2000
 
     });
 
