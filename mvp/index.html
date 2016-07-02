@@ -50,8 +50,7 @@
 <script>
     var video = document.querySelector('video');
 
-    var player = videojs(video, {
-    }, function() {
+    var player = videojs(video, {}, function () {
         player.dock({
             title: 'Bacon ipsum dolor amet ribeye',
             description: 'Doner shank pork loin sirloin, meatloaf shankle chicken bresaola cow shoulder cupim.'
@@ -78,7 +77,8 @@
     <div id="loading_home" class="studio_first">
 
         <img src="assets/img/cercle_first.png" class="img-responsive img_middle" id="loadCercle" alt="cercle">
-        <img src="assets/img/logo-white.png" id="logo" class="img-responsive img_middle" alt="logo" width="461px" height="149px">
+        <img src="assets/img/logo-white.png" id="logo" class="img-responsive img_middle" alt="logo" width="461px"
+             height="149px">
 
     </div>
 
@@ -87,10 +87,10 @@
 
         <div class="dotNav">
             <ul class="menuList">
-                <li id="btn-1" class="active"><span><a href="#first_home" class="active">ACCUEIL</a></span></li>
-                <li id="btn-2"><span><a href="#second_home">SERVICE</a></span></li>
-                <li id="btn-3"><span><a href="#trois_home">EXPERTISES</a></span></li>
-                <li id="btn-4"><span><a href="#quatre_home">CATALOGUE DE FILMS</a></span></li>
+                <li id="btn-1" class="active"><span><a href="javascript:void(0);" class="active">ACCUEIL</a></span></li>
+                <li id="btn-2"><span><a href="javascript:void(0);">SERVICE</a></span></li>
+                <li id="btn-3"><span><a href="javascript:void(0);">EXPERTISES</a></span></li>
+                <li id="btn-4"><span><a href="javascript:void(0);">EXPERIENCE</a></span></li>
                 <li id="btn-5"><span><a href="javascript:void(0);">CONTACT</a></span></li>
             </ul>
         </div>
@@ -105,10 +105,10 @@
         </ul>
 
         <ul class="socialNet">
-            <li><a href="https://bit.ly/2953KsK"><i class="fa fa-facebook fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
-            <li><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+            <li><a href="https://bit.ly/2953KsK" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://bit.ly/29ahjeK" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+            <li><a href="https://bit.ly/29gg7Gd" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+            <li><a href="https://bit.ly/29ahBCp" target="_blank"><i class="fa fa-youtube fa-2x"></i></a></li>
         </ul>
 
     </nav>
@@ -159,12 +159,13 @@
                     <div class="col-lg-4 col-md-offset-4 ">
 
                         <h1 class="title_section_1">VOTRE GÉNÉRATEUR D'ÉMOTIONS SUR MESURE</h1>
-                        <p class="text_section_1">Ikone Studio redéfinit fondamentalement le monde cinématographique : Avec Ikone Studio,
-                            vous pouvez rejouez les scènes des films ou des séries qui vous ont procuré de grandes émotions</p>
+                        <p class="text_section_1">Ikone Studio redéfinit fondamentalement le monde cinématographique :
+                            avec Ikone Studio,
+                            vous pouvez rejouer les scènes des films ou des séries qui vous ont procuré de grandes
+                            émotions</p>
 
-                        <div style="z-index:200;" class="button_section_player" id="startVideoBtn">
-                            LIRE LA VIDEO<span
-                                class="btn_section_player" id="imgplayer">▶</span>
+                        <div style="z-index:200;" class="button_section_player" id="startVideoBtn">LIRE LA VIDEO
+                            <span class="btn_section_player"><img src="assets/img/btn-play-video.png"></span>
 
 
                         </div>
@@ -176,7 +177,7 @@
         </section>
 
 
-        <section id="trois_home" class="container content-section text-center">
+        <section id="trois_home" class="container text-center">
 
 
             <div class="container">
@@ -186,12 +187,16 @@
                             <img src="assets/img/img-exper.png" class="img-responsive" alt="img expertise">
                         </div>
 
-                        <div class="col-lg-6 text_expert">
-                            <h1 class="title_section_2">Un service haut de gamme de personnalisation de scènes</h1>
-                            <p class="text_section_2">Travel means freedom. With RIMOWA Electronic Tag you will enjoy
-                                even
-                                greater freedom.
-                                Check-in your luggage from home, the hotel or on the go - it’s your trip.</p>
+                        <div class="col-lg-7">
+                            <h1 class="title_section_2">UN SERVICE HAUT DE GAMME DE PERSONNALISATION DE SCÈNE</h1>
+                            <p class="text_section_2">Interrogé sur le monde cinématographique et le fait d'aller plus
+                                loin que des émotions ressenties à travers l'écran,
+                                nous avons créé le service Ikone Studio.
+                                Ikone Studio est à la fois une offre nouvelle et révolutionnaire, l'introduction du
+                                premier service haut de gamme de personnalisation de scènes, de film
+                                ou de série, une expérience unique qui va redéfinir le cinéma. En souscrivant à ce
+                                service, les clients pourront vivre ses émotions particulières en incarnant
+                                leur idole.</p>
 
                             <div style="text-align:left;">
                                 <div class="button_section_expert">VOIR L'EXPERTISE</div>
@@ -205,12 +210,13 @@
             </div>
         </section>
 
-        <section id="quatre_home" class="container content-section text-center">
+        <section id="quatre_home" class="container text-center">
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h1 class="title_section">DES EXPERTS EXCELLENTS DANS LE DOMAINE CINÉMATOGRAPHIQUE</h1>
+                    <div class="col-lg-12">
+                        <h1 class="title_section_3">DES EXPERTS EXCELANT DANS LE DOMAINE CINÉMATOGRAPHIQUE DEPUIS PLUS
+                            DE 20 ANS</h1>
                     </div>
                 </div>
 
@@ -242,30 +248,32 @@
 
         </section>
 
-        <section id="cinq_home" class="studio_cinq">
-            <div class="container">
+
+        <section id="cinq_home" class="container" style="background-color:#0c0c0c;">
+
+            <div class="img_triples_circle"></div>
+
+
+            <div class="container global_text_section1">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <h2>Contact</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
-                        <div id="contactForm">
-                        <form>
-                            <input name="nom" id="nom" type="text" class="feedback-input" placeholder="Nom" required="required"/>
-                            <input name="prenom" id="prenom" type="text" class="feedback-input" placeholder="Prenom" required="required"/>
-                            <input name="email" id="email"  type="email" class="feedback-input" placeholder="Email" required="required"/>
-                            <input name="objet" id="objet" type="text" class="feedback-input" placeholder="Film que je veux jouer" required="required"/>
-                            <textarea name="text" id="message"  class="feedback-input" placeholder="Message" required="required"></textarea>
-                            <input type="submit" style="z-index:200;" class="button_section_contact" disabled id="submitContactForm" value="Envoyer">
-                            </input>
-                        </form>
-                            </div>
+                    <div class="col-lg-4 col-md-offset-4 ">
+
+                        <h1 class="title_section_4">VOYAGER À TRAVERS DIFFÉRENTES ÉMOTIONS</h1>
+                        <p class="text_section_4">Découvrez différentes scènes marquantes du monde cinématographique à travers notre catalogue</p>
+
+                        <div style="z-index:200;" class="button_section_player" id="startVideoBtn"><a href="experience.html">VIVRE L'EXPERIENCE</a></div>
+
                     </div>
                 </div>
             </div>
+
         </section>
+
+        <section id="six_home" class="container" style="background-color:green;">
+
+
+        </section>
+
 
     </div>
 

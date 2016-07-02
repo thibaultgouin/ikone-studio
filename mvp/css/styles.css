@@ -122,6 +122,15 @@ section {
     transition: top 0.8s;
 }
 
+#six_home {
+    width: 100%;
+    background-size: cover;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    transition: top 0.8s;
+}
+
 .studio_cinq {
     background-color: #161c23;
 }
@@ -235,6 +244,7 @@ section {
     line-height:40px;
 }
 
+
 .text_section_1 {
     color: white;
     font-size: 16px;
@@ -261,11 +271,15 @@ section {
     transition: all 0.3s;
 }
 
-.button_section_player:hover{
-    color: #ffffff;
-    background-color: #eedecb;
-    border: 2px #eedecb solid;
+.button_section_player a{
+    text-decoration: none;
+    color:white;
 }
+.button_section_player a:hover{
+    text-decoration: none;
+    color:white;
+}
+
 
 #imgplayer{
     display: inline-block;
@@ -320,6 +334,17 @@ section {
     transform: translate(-50%, -50%) scale(1);
 }
 
+.img_triples_circle {
+    background-image: url("../assets/img/triple-circle-white.png");
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 560px;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .logo-small {
     position:absolute;
     z-index:9000;
@@ -340,19 +365,21 @@ section {
 }
 
 .expert_global {
-    margin-top: 10%;
+    margin-top: 17%;
     margin-left: 7%;
 }
 
 .title_section_2 {
     text-align: left;
+    line-height:60px;
 }
 
 .text_section_2 {
     color: white;
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 20px;
     text-align: left;
+    line-height:25px;
 }
 
 .button_section_expert {
@@ -376,6 +403,29 @@ section {
 /* ###### FIN SECTION 2 : EXPERT ###### */
 
 
+/* ###### SECTION 3 : SUITE EXPERT ###### */
+.title_section_3 {
+    line-height:60px;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+
+/* ###### FIN SECTION 3 : SUITE EXPERT ###### */
+
+/* ###### SECTION 4 : EXPERIENCEEEE ###### */
+
+
+.title_section_4{
+    margin: 0 auto;
+    color: white;
+    font-size: 27px;
+    line-height:40px;
+}
+
+
+/* ###### SECTION 4 : EXPERIENCEEEE ###### */
+
 .img_middle_section_first{
     background-image:url("../assets/img/circle-white.png");
     background-repeat:no-repeat;
@@ -389,6 +439,16 @@ section {
     transform: translate(-50%, -50%)  rotate(0deg) scale(0);
     transform-origin: center center;
 }
+
+.text_section_4{
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+
+    line-height:27px;
+}
+
+
 /*
 @keyframes scaleC {
     0% {
@@ -421,7 +481,7 @@ section {
 }
 
 .section_team {
-    margin-top:10%;
+    margin-top:6%;
 }
 
 
