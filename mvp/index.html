@@ -47,8 +47,6 @@
 </video>
 
 
-
-
 <div class="wrapper">
 
     <div class="container" style="position:fixed; z-index:9000;">
@@ -115,7 +113,7 @@
 
             <div class="container global_text_section1">
                 <div class="row">
-                    <div class="col-lg-4 col-md-offset-4 ">
+                    <div class="col-lg-4 col-md-offset-4 col-xs-12">
 
                         <h1 class="title_section_1">VOTRE GÉNÉRATEUR D'ÉMOTIONS SUR MESURE</h1>
                         <p class="text_section_1">Ikone Studio redéfinit fondamentalement le monde cinématographique :
@@ -141,12 +139,15 @@
 
             <div class="container">
                 <div class="row">
+
+                    <h1 class="title_home_mobile col-lg-12">UN SERVICE HAUT DE GAMME DE PERSONNALISATION DE SCÈNE</h1>
+
                     <div class="col-lg-12 expert_global">
-                        <div class="col-lg-4 image-expert">
+                        <div class="image-expert" style="display:inline-block">
                             <img src="assets/img/img-exper.png" class="img-responsive" alt="img expertise">
                         </div>
 
-                        <div class="col-lg-7">
+                        <div class="col-lg-7 col-xs-12" style="display:inline-block">
                             <h1 class="title_section_2">UN SERVICE HAUT DE GAMME DE PERSONNALISATION DE SCÈNE</h1>
                             <p class="text_section_2">Interrogé sur le monde cinématographique et le fait d'aller plus
                                 loin que des émotions ressenties à travers l'écran,
@@ -157,7 +158,7 @@
                                 service, les clients pourront vivre ses émotions particulières en incarnant
                                 leur idole.</p>
 
-                            <div style="text-align:left;">
+                            <div class="align_btn_exp">
                                 <div class="button_section_expert">VOIR L'EXPERTISE</div>
                             </div>
 
@@ -210,19 +211,20 @@
 
         <section id="cinq_home" class="container" style="background-color:#0c0c0c;">
 
-            <div class="img_triples_circle"></div>
+            <div class="img_triples_circle">
 
 
-            <div class="container global_text_section1">
-                <div class="row">
-                    <div class="col-lg-4 col-md-offset-4 ">
+                <div class="container global_text_section5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-offset-4 col-xs-12">
 
-                        <h1 class="title_section_4">VOYAGER À TRAVERS DIFFÉRENTES ÉMOTIONS</h1>
-                        <p class="text_section_4">Découvrez différentes scènes marquantes du monde cinématographique à
-                            travers notre catalogue</p>
+                            <h1 class="title_section_4">VOYAGER À TRAVERS DIFFÉRENTES ÉMOTIONS</h1>
+                            <p class="text_section_4">Découvrez différentes scènes marquantes du monde cinématographique
+                                à travers notre catalogue</p>
 
-                        <div style="z-index:200;" class="button_section_player"><a
-                                href="experience.html">VIVRE L'EXPERIENCE</a></div>
+                            <div style="z-index:200;" class="button_section_player"><a
+                                    href="experience.html">VIVRE L'EXPERIENCE</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -230,22 +232,22 @@
 
         <section id="six_home" class="container content-section text-center">
 
-            <div class="img_triples_circle"></div>
+            <div class="img_triples_circle">
 
-            <div class="container global_text_section6">
-                <div class="row">
-                    <div class="col-lg-4 col-md-offset-4 ">
+                <div class="container global_text_section5">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-offset-4 ">
 
-                        <h1 class="title_section_4">ENVIE DE VIVRE UNE EXPERIENCE HORS DU COMMUN</h1>
-                        <br class="text_section_4">Vous avez toujours rêvez d'incarner votre idole
-                        ?</br>
-                        Faites-nous part de votre projet et nous nous chargerons du reste</p>
+                            <h1 class="title_section_4">ENVIE DE VIVRE UNE EXPERIENCE HORS DU COMMUN</h1>
+                            <br class="text_section_4">Vous avez toujours rêvez d'incarner votre idole
+                            ?</br>
+                            Faites-nous part de votre projet et nous nous chargerons du reste</p>
 
-                        <div style="z-index:200;" class="button_section_player"><a
-                                href="contact.html">CONTACTEZ-NOUS</a></div>
+                            <div style="z-index:200;" class="button_section_player"><a
+                                    href="contact.html">CONTACTEZ-NOUS</a></div>
 
 
-
+                        </div>
                     </div>
                 </div>
             </div>
@@ -263,8 +265,7 @@
     var video = document.querySelector('video');
 
     var player = videojs(video, {}, function () {
-        player.dock({
-        });
+        player.dock({});
         player.shelf.addChild('fullscreenToggle');
     });
 

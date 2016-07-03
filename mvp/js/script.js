@@ -30,7 +30,7 @@ $(document).ready(function () {
         setTimeout(function () {
         $("#loading_home").css("margin-left","100%");
             $bghome.eq(index).addClass("current");
-        }, 2000);//2000
+        }, 0);//2000
 
     });
 
@@ -163,6 +163,7 @@ $(document).ready(function () {
     }
     $(".senti_btn").on('click', function (e) {
         $('#name_sentiment').html(  $('<h1 class="emotion">'+ $(this).attr('alt') +'</h1>')  );
+        $(".saisir_experience p").css("display", 'none');
         $(".img-experience").css("background-image",$(this).data('background'));
         $(".btn-experience").find('a').attr("href", "page-exp/" + $(this).attr('alt') + '.html');
     });
@@ -170,6 +171,8 @@ $(document).ready(function () {
     $(".button_section_expert").on('click', function (e) {
         homeDown();
     });
+
+
 
 
 
