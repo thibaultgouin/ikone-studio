@@ -1,8 +1,23 @@
+@font-face {
+    font-family: "Gotham-light";
+    src: url('../fonts/Gotham-Light.otf');
+}
+
+@font-face {
+    font-family: "Gotham-light-Italic";
+    src: url('../fonts/Gotham-LightItalic.otf');
+}
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: url('../fonts/Gotham-bold.OTF');
+}
+
 html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: Georgia, serif;
+    font-family: Gotham-light, sans-serif;
 }
 
 .wrapper,
@@ -10,6 +25,10 @@ body,
 html {
     width: 100%;
     height: 100%
+}
+
+h1{
+    font-family: Georgia, serif;
 }
 
 .wrapper {
@@ -103,7 +122,7 @@ section {
 #trois_home {
     width: 100%;
     /* background-color:#17423C;*/
-    background-color: #191f27;
+    background-color: #181f27;
     background-size: cover;
     position: fixed;
     top: 100%;
@@ -184,7 +203,7 @@ section {
 
 .title_project {
     position: fixed;
-    z-index: 9000;
+    z-index: 2;
     font-size: 50px;
     top: 50%;
     transition: 0.8s;
@@ -253,6 +272,7 @@ section {
     color: white;
     font-size: 27px;
     line-height: 40px;
+    font-family: Georgia, serif;
 }
 
 .text_section_1 {
@@ -269,8 +289,8 @@ section {
     margin: 0 auto;
     margin-top: 40px;
     padding: 16px 25px 16px 25px;
-    border: 2px #eedfcc solid;
-    color: white;
+    border: 2px #e9dccb solid;
+    color: #e9dccb;
     background: none;
     cursor: pointer;
     text-align: center;
@@ -282,7 +302,7 @@ section {
 }
 
 .button_section_player:hover {
-    background-color: rgba(238, 223, 204, 0.3);
+    background-color: rgba(233, 220, 203, 0.3);
     transition: all .7s;
 }
 
@@ -395,6 +415,7 @@ section {
 .title_section_2 {
     text-align: left;
     line-height: 60px;
+    font-family: Georgia, serif;
 }
 
 .text_section_2 {
@@ -453,6 +474,7 @@ section {
     line-height: 60px;
     margin: 0 auto;
     margin-top: 10%;
+    font-family: Georgia, serif;
 }
 
 /* ###### FIN SECTION 3 : SUITE EXPERT ###### */
@@ -565,6 +587,7 @@ transform: translate(-50%, -50%) scale(1)
 
 .section_team h2 {
     color: #cfb995;
+    font-family: Gotham-light-Italic, sans-serif;
 }
 
 .section_team {
@@ -627,14 +650,14 @@ transform: translate(-50%, -50%) scale(1)
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 2px #dac9ae solid;
+    border: 2px #e9dccb solid;
     line-height: 32px;
     margin-left: 8px;
     /* padding-left: 4px; */
 }
 
 .button_section_player:hover #imgplayer {
-    border: 2px #fff solid;
+    border: 2px #e9dccb solid;
 }
 
 .btn-experience a {
@@ -779,6 +802,72 @@ transform: translate(-50%, -50%) scale(1)
     color: white;
 }
 
+.text_exp_video{
+    position:absolute;
+    width:500px;
+    top:35%;
+    right:3%;
+    z-index: 9000;
+}
+
+.descrip_film{
+    z-index: 9000;
+    background-color:rgba(165,164,164,0.2);
+}
+
+.descrip_film>p{
+    font-size:17px;
+    color:white;
+    font-family:Georgia, sans-serif;
+    line-height:25px;
+    padding:20px;
+    text-align:justify;
+}
+
+.btn_film{
+    z-index: 1000;
+    background-color:#151c24;
+    padding: 0px 22px 18px 22px;
+
+}
+
+.button_section_film {
+    display:inline-block;
+    width: 200px;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left:10px;
+    padding: 13px 22px 13px 22px;
+    border: 2px #e9dccb solid;
+    color: #e9dccb;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button_section_film:hover {
+    background-color: rgba(233, 220, 203, 0.3);
+    transition: all .7s;
+}
+
+.button_section_film a {
+    text-decoration: none;
+    color: white;
+}
+
+.button_section_film a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+
 /* ###### FIN PAGE EXPERIENCE ###### */
 
 /* ###### MOUSE EFFET ###### */
@@ -855,6 +944,7 @@ transform: translate(-50%, -50%) scale(1)
 
 .mod-navigation.open {
     width: 250px;
+    background-color: #000;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
@@ -879,7 +969,7 @@ transform: translate(-50%, -50%) scale(1)
 }
 
 .mod-navigation {
-    background-color: #000;
+    background-color: transparent;
     z-index: 10;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -910,7 +1000,7 @@ transform: translate(-50%, -50%) scale(1)
 .mod-navigation .nav-icon span {
     display: block;
     height: 1px;
-    background: #9f9e9a;
+    background: #ffffff;
     opacity: 1;
     right: 0;
     -webkit-transition: .25s ease-in-out;
@@ -935,7 +1025,7 @@ transform: translate(-50%, -50%) scale(1)
 }
 
 .mod-navigation .menuList {
-    background-color: #1a1a1a;
+    background-color: transparent;
     display: block;
     list-style: none;
     position: relative;
@@ -952,7 +1042,7 @@ transform: translate(-50%, -50%) scale(1)
 .mod-navigation .menuList > li a {
     color: #e1e1e1;
     display: block;
-    font-family: "Raleway", sans-serif;
+    font-family: Gotham-light, sans-serif;
     font-size: 14px;
     line-height: 25px;
     text-transform: uppercase;
@@ -967,7 +1057,7 @@ transform: translate(-50%, -50%) scale(1)
 
 .mod-navigation .menuList > li a:before {
     border-radius: 50%;
-    background-color: #282828;
+    background-color: #282828; /*ez*/
     content: " ";
     display: inline-block;
     height: 11px;
@@ -975,8 +1065,17 @@ transform: translate(-50%, -50%) scale(1)
     position: relative;
     -webkit-transform: translate(-30px);
     transform: translate(-30px);
-
 }
+
+.span_hover{
+    position: absolute;
+    right: -60px;
+    top: -6px;
+    padding: 5px;
+    visibility: hidden;
+    transition:all .6s;
+}
+
 
 .mod-navigation .menuList > li a.active:before {
     background-color: #e1e1e1;
@@ -984,6 +1083,7 @@ transform: translate(-50%, -50%) scale(1)
 
 .mod-navigation .menuList > li a:hover {
     text-decoration: none;
+
 }
 
 .mod-navigation .menuList > li a > span {
@@ -993,6 +1093,7 @@ transform: translate(-50%, -50%) scale(1)
 .mod-navigation.open .menuList {
     left: 0;
     -webkit-transition: all .6s ease-in-out;
+    background-color:#1a1a1a;
     transition: all .6s ease-in-out;
 }
 
@@ -1388,6 +1489,7 @@ textarea {
     #trois_home {
         width: 100%;
         position: inherit;
+        background-color: #181f27;
         transition: top 0.8s;
     }
 
@@ -1395,6 +1497,7 @@ textarea {
         width: 100%;
         position: inherit;
         transition: top 0.8s;
+        background-color: #181f27;
         padding-bottom: 50px;
     }
 
@@ -1408,7 +1511,7 @@ textarea {
 
     #six_home {
         width: 100%;
-        background-color: #161c23;
+        background-color: #181f27;
         background-size: cover;
         position: inherit;
         transition: top 0.8s;

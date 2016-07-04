@@ -30,7 +30,7 @@ $(document).ready(function () {
         setTimeout(function () {
         $("#loading_home").css("margin-left","100%");
             $bghome.eq(index).addClass("current");
-        }, 0);//2000
+        }, 2000);//2000
 
     });
 
@@ -173,6 +173,21 @@ $(document).ready(function () {
     });
 
 
+
+    $(".dotNav").mouseover(function(){
+        $(".span_hover").css("right", "60px");
+        $(".span_hover").css("visibility", "visible");
+
+        if ($(".mod-navigation").hasClass("open")){
+            $(".span_hover").css("visibility", "hidden");
+        }
+    });
+
+
+    $(".dotNav").mouseout(function(){
+        $(".span_hover").css("right", "-90px");
+        $(".span_hover").css("visibility", "hidden");
+    });
 
 
 
