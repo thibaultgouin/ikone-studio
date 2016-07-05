@@ -42,7 +42,7 @@
         controls
         width="500px" height="500px"
         data-setup='{ "playbackRates": [1, 1.5, 2] }'>
-    <source src="assets/video/ds.mp4" type='video/mp4'/>
+    <source src="assets/video/bg.mp4" type='video/mp4'/>
     <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
 </video>
 
@@ -262,14 +262,14 @@
 
 <!-- JS LINK -->
 <script>
-    var video = document.querySelector('video');
-
-    var player = videojs(video, {}, function () {
-        player.dock({});
-        player.shelf.addChild('fullscreenToggle');
-    });
-
-
+    var videos = document.querySelectorAll('video');
+    for (var i=0; i< videos.length; i++) {
+        let player = videojs(videos[i].getAttribute('id'), {}, function() {
+            player.dock({
+            });
+            player.shelf.addChild('fullscreenToggle');
+        });
+    }
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

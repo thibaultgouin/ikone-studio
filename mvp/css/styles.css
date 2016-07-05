@@ -175,7 +175,7 @@ section {
 /* ####### PAGE PROJET ###### */
 
 #projet_1 {
-    background-image: url("../assets/img/bg_equipe1.jpg");
+    background-image: url("../assets/img/romantique/dirty-dancing.jpeg");
     width: 100%;
     background-size: cover;
     top: 0;
@@ -185,7 +185,7 @@ section {
 }
 
 #projet_2 {
-    background-image: url("../assets/img/bg_equipe2.jpg");
+    background-image: url("../assets/img/romantique/notebook.jpg");
     width: 100%;
     background-size: cover;
     top: 100%;
@@ -1418,16 +1418,13 @@ video#vid_bg {
 
 /* ######### CONTACT.HTML ########## */
 
-form {
-    max-width: 420px;
-    margin: 50px auto;
-}
+form { max-width:420px; margin:25px auto; }
 
 .feedback-input {
-    color: #818181;
+    color: #818181 ;
     font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    border-color: #818181;
+    font-weight:500;
+    border-color: #818181 ;
     font-size: 18px;
     border-width: 0 0 2px 0;
     line-height: 22px;
@@ -1435,20 +1432,52 @@ form {
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
-    width: 100%;
+    width:100%;
     box-sizing: border-box;
-    outline: 0;
+    outline:0;
 }
 
+
 textarea {
-    height: 150px;
+    height: 125px;
     line-height: 150%;
-    resize: vertical;
+    resize:vertical;
 }
 
 .focused {
     color: #cecece;
     border-color: #cecece;
+}
+
+.contact_first {
+    background-color: black;
+}
+
+.contact_first h1 {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+#page_contact {
+    transition: 0.8s;
+    background-color: #1d1e22;
+}
+
+/*.img_triples_circle_contact {
+    background-image: url("../assets/img/triple-circle-white-contact.png");
+    background-repeat: no-repeat;
+    width: 560px;
+    height: 700px;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+} */
+
+#RS a {
+    padding: 20px 10px;
+    color: white;
 }
 
 /* ######### FIN CONTACT.HTML ########## */
