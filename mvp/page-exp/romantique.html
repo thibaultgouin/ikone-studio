@@ -14,7 +14,7 @@
     <!-- CSS LINKS -->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-    <link rel='stylesheet' href='../node_modules/video.js/dist/video-js.css'>
+    <link rel='stylesheet' href='../dist/video-js.css'>
     <link rel="stylesheet" href="../css/sublime.css">
     <link rel="stylesheet" type="text/css" href="../dist/sweetalert.css">
     <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css"/>
@@ -27,9 +27,9 @@
     <![endif]-->
 
     <!-- VIDEO.JS DOCK -->
-    <script src='../node_modules/video.js/dist/video.js'></script>
-    <script src="../node_modules/videojs-dock/dist/videojs-dock.js"></script>
-    <link rel="stylesheet" type="text/css" href="../node_modules/videojs-dock/dist/videojs-dock.css"/>
+    <script src='../dist/video.js'></script>
+    <script src="../dist/videojs-dock.js"></script>
+    <link rel="stylesheet" type="text/css" href="../dist/videojs-dock.css"/>
 
 </head>
 
@@ -42,7 +42,7 @@
         controls
         width="500px" height="500px"
         data-setup='{ "playbackRates": [1, 1.5, 2] }'>
-    <source src="../assets/video/romantique/dirty_dancing.mp4" type='video/mp4'/>
+    <source src="../assets/video/bg.mp4" type='video/mp4'/>
     <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
 </video>
 
@@ -53,7 +53,7 @@
         controls
         width="500px" height="500px"
         data-setup='{ "playbackRates": [1, 1.5, 2] }'>
-    <source src="../assets/video/romantique/notebook.mp4" type='video/mp4'/>
+    <source src="../assets/video/bg.mp4" type='video/mp4'/>
     <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
 </video>
 
@@ -115,15 +115,10 @@
 
 
     <div class="bg_project">
-        <section data-index="1" class="projet" id="projet_1">
+        <section data-index="1" class="projet" id="romantique_1">
             <div class="text_exp_video">
                 <div class="descrip_film">
-                    <p>At vero eos et accusamus et iusto odio
-                        dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-                        atque corrupti quos dolores et quas molestias excepturi sint
-                        occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                        mollitia animi, id est laborum et dolorum fuga.provident, similique sunt in culpa qui officia deserunt
-                        mollitia animi, id est laborum et dolorum fuga.</p>
+                    <p>Été 1963, Bébé  de son vrai prénom Frédérique fille d'une riche famille juive, passe ses vacances avec ses parents et sa sœur dans la région des montagnes Catskill dans l'État de New York, à la pension de la famille Kellerman. Elle se trouve mêlée à la vie des employés de la pension et se trouve confrontée à un monde qui lui est complètement étranger, celui de la danse. Malgré le désaccord de son père, Bébé va connaître une histoire d'amour avec Johnny, le professeur de danse de l'établissement, issu d'un milieu social très différent de celui de la jeune femme.</p>
 
 
                     <div class="btn_film">
@@ -140,12 +135,13 @@
         </section>
 
 
-        <section data-index="2" class="projet" id="projet_2">
+        <section data-index="2" class="projet" id="romantique_2">
 
             <div class="text_exp_video">
                 <div class="descrip_film">
-                    <p>ti cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-                        est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime p</p>
+                    <p>Atteinte de la maladie d'Alzheimer, Allie vit en maison de retraite. Chaque jour, Noah lui lit le même livre. Il s'agit du carnet où Allie a consigné sa propre histoire, lorsqu'elle a appris sa maladie. Pour ne pas oublier ses sentiments, elle a écrit, et Noah, inlassablement, lui relit ses propres mots.
+                        A travers eux, on la découvre dans les années trente, éperdument amoureuse d'un jeune homme, Noah, que sa mère fera tout pour éloigner d'elle, sa situation n'étant pas jugée assez bonne.
+                        Après des années de séparation, à la fin de la Seconde Guerre mondiale, Allie s'apprête à épouser un avocat. Lorsque, par le journal, elle apprend le retour de Noah, l'envie lui prend de le revoir. Echappant à une vie de convenance, les deux jeunes gens se retrouvent et découvrent que leur amour est resté intact. Ils passeront le reste de leur vie ensemble, jusqu'à ce que la mémoire les sépare.</p>
 
 
                     <div class="btn_film">
@@ -180,14 +176,18 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="../js/dotmenu.js"></script>
 <script src="../js/video-fullscreen.js"></script>
-<script src='../node_modules/video.js/dist/video.js'></script>
-<script src="../node_modules/es5-shim/es5-shim.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src='../dist/video.js'></script>
+<script src="../dist/es5-shim.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/newsletter.js"></script>
 <script src="../dist/sweetalert.min.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/dotmenu.js"></script>
 <script type="text/javascript" src="../js/scriptprojet.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
 <script type="text/javascript" src="../js/mousewheel.js"></script>
 
 </body>
