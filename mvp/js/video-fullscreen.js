@@ -52,10 +52,10 @@ $(function () {
         $('#titanic video').css('display','block');
     });
 
-    $('#play-pretty-woman').on('click', function () {
-        playVideoFullscreen('pretty-woman');
-        $('#pretty-woman').css('display','block');
-        $('#pretty-woman video').css('display','block');
+    $('#play-belle-bete').on('click', function () {
+        playVideoFullscreen('belle-bete');
+        $('#belle-bete').css('display','block');
+        $('#belle-bete video').css('display','block');
     });
 
     ///// FIN ROMANTIQUE //////////
@@ -161,10 +161,10 @@ $(function () {
         $('#american-psycho video').css('display','block');
     });
 
-    $('#play-batman').on('click', function () {
-        playVideoFullscreen('batman');
-        $('#batman').css('display','block');
-        $('#batman video').css('display','block');
+    $('#play-orange').on('click', function () {
+        playVideoFullscreen('orange');
+        $('#orange').css('display','block');
+        $('#orange video').css('display','block');
     });
 
     $('#play-shining').on('click', function () {

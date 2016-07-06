@@ -176,6 +176,11 @@ section {
 
 /* ####### PAGE PROJET ###### */
 
+.projet{
+    box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.25);
+}
 
 
 #projet_1 {
@@ -238,7 +243,7 @@ section {
 /* ####### PAGE ROMANTIQUE ###### */
 
 #romantique_1 {
-    background-image: url("../assets/img/romantique/dirty-dancing.jpg");
+    background-image: url("../assets/img/romantique/dirty-dancing.jpeg");
     width: 100%;
     background-size: cover;
     top: 0;
@@ -258,7 +263,7 @@ section {
 }
 
 #romantique_3 {
-    background-image: url("../assets/img/romantique/Pretty-Woman.jpg");
+    background-image: url("../assets/img/romantique/la-belle-et-la-bete.jpg");
     width: 100%;
     background-size: cover;
     top: 100%;
@@ -453,7 +458,7 @@ section {
 }
 
 #psychopathe_2 {
-    background-image: url("../assets/img/psychopathe/batman.jpg");
+    background-image: url("../assets/img/psychopathe/orange.jpg");
     width: 100%;
     background-size: cover;
     top: 100%;
