@@ -1008,7 +1008,9 @@ transform: translate(-50%, -50%) scale(1)
 }
 
 .retour_experience a:hover {
+    text-decoration: none;
     color: white;
+    border-bottom:1px solid white;
 }
 
 .text_exp_video{
@@ -2136,6 +2138,10 @@ textarea {
     .retour_experience {
         right: 30%;
     }
+    .img_triples_circle {
+        display:none;
+    }
+
 
 }
 
