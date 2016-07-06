@@ -32,22 +32,30 @@ $(function () {
     }
 
         $('#startVideoBtn').on('click', function () {
-            playVideoFullscreen('vid1')
+            playVideoFullscreen('vid1');
+            $('#vid1').css('display','block');
+            $('#vid1 video').css('display','block');
         });
 
     ///// DEBUT ROMANTIQUE //////////
 
 
     $('#play-dirty-dancing').on('click', function () {
-        playVideoFullscreen('dirty-dancing')
+        playVideoFullscreen('dirty-dancing');
+        $('#dirty-dancing').css('display','block');
+        $('#dirty-dancing video').css('display','block');
     });
 
-    $('#play-notebook').on('click', function () {
-        playVideoFullscreen('notebook')
+    $('#play-titanic').on('click', function () {
+        playVideoFullscreen('titanic');
+        $('#titanic').css('display','block');
+        $('#titanic video').css('display','block');
     });
 
     $('#play-pretty-woman').on('click', function () {
-        playVideoFullscreen('pretty-woman')
+        playVideoFullscreen('pretty-woman');
+        $('#pretty-woman').css('display','block');
+        $('#pretty-woman video').css('display','block');
     });
 
     ///// FIN ROMANTIQUE //////////
@@ -56,15 +64,21 @@ $(function () {
 
 
     $('#play-pirates').on('click', function () {
-        playVideoFullscreen('pirates')
+        playVideoFullscreen('pirates');
+        $('#pirates').css('display','block');
+        $('#pirates video').css('display','block');
     });
 
     $('#play-gladiator').on('click', function () {
-        playVideoFullscreen('gladiator')
+        playVideoFullscreen('gladiator');
+        $('#gladiator').css('display','block');
+        $('#gladiator video').css('display','block');
     });
 
     $('#play-300').on('click', function () {
-        playVideoFullscreen('300')
+        playVideoFullscreen('300');
+        $('#300').css('display','block');
+        $('#300 video').css('display','block');
     });
 
     ///// FIN CAPITAINE //////////
@@ -96,17 +110,21 @@ $(function () {
 
 
     $('#play-superman').on('click', function () {
-        playVideoFullscreen('matrix')
+        playVideoFullscreen('superman')
         $('#superman').css('display','block');
         $('#superman video').css('display','block');
     });
 
-    $('#play-ipman').on('click', function () {
-        playVideoFullscreen('ipman')
+    $('#play-indiana').on('click', function () {
+        playVideoFullscreen('indiana');
+        $('#indiana').css('display','block');
+        $('#indiana video').css('display','block');
     });
 
-    $('#play-gran-torino').on('click', function () {
-        playVideoFullscreen('gran-torino')
+    $('#play-dredd').on('click', function () {
+        playVideoFullscreen('dredd');
+        $('#dredd').css('display','block');
+        $('#dredd video').css('display','block');
     });
 
     ///// FIN JUSTICIER //////////
@@ -115,17 +133,46 @@ $(function () {
 
 
     $('#play_matrix').on('click', function () {
-        playVideoFullscreen('matrix')
+        playVideoFullscreen('matrix');
+        $('#matrix').css('display','block');
+        $('#matrix video').css('display','block');
     });
 
     $('#play_ipman').on('click', function () {
-        playVideoFullscreen('ipman')
+        playVideoFullscreen('ipman');
+        $('#ipman').css('display','block');
+        $('#ipman video').css('display','block');
     });
 
     $('#play_gran_torino').on('click', function () {
-        playVideoFullscreen('gran-torino')
+        playVideoFullscreen('gran-torino');
+        $('#gran-torino').css('display','block');
+        $('#gran-torino video').css('display','block');
     });
 
     ///// FIN MENTOR //////////
+
+    ///// DEBUT PSYCHOPATHE //////////
+
+
+    $('#play-american-psycho').on('click', function () {
+        playVideoFullscreen('american-psycho');
+        $('#american-psycho').css('display','block');
+        $('#american-psycho video').css('display','block');
+    });
+
+    $('#play-batman').on('click', function () {
+        playVideoFullscreen('batman');
+        $('#batman').css('display','block');
+        $('#batman video').css('display','block');
+    });
+
+    $('#play-shining').on('click', function () {
+        playVideoFullscreen('shining');
+        $('#shining').css('display','block');
+        $('#shining video').css('display','block');
+    });
+
+    ///// FIN PSYCHOPATHE //////////
 
     })

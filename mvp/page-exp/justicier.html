@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../dist/sweetalert.css">
+    <link rel='stylesheet' href='../dist/video-js.css'>
+    <link rel="stylesheet" href="../css/sublime.css">
     <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 
@@ -23,7 +25,49 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- VIDEO.JS DOCK -->
+    <script src='../dist/video.js'></script>
+    <script src="../dist/videojs-dock.js"></script>
+    <link rel="stylesheet" type="text/css" href="../dist/videojs-dock.css"/>
+
 </head>
+
+<!-- DEBUT VIDEO CATEGORIE PSYCHO-->
+
+<video
+        style="position : absolute; top: 0; z-index:-1; display: none;"
+        id="superman"
+        class="video-js vjs-sublime-skin"
+        controls
+        data-setup='{ "playbackRates": [1, 1.5, 2] }'>
+    <source src="../assets/video/bg.mp4" type='video/mp4'/>
+    <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
+</video>
+
+<video
+        style="position : absolute; top: 0; z-index:-1; display: none;"
+        id="indiana"
+        class="video-js vjs-sublime-skin"
+        controls
+        data-setup='{ "playbackRates": [1, 1.5, 2] }'>
+    <source src="../assets/video/bg.mp4" type='video/mp4'/>
+    <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
+</video>
+
+<video
+        style="position : absolute; top: 0; z-index:-1; display: none;"
+        id="dredd"
+        class="video-js vjs-sublime-skin"
+        controls
+        data-setup='{ "playbackRates": [1, 1.5, 2] }'>
+    <source src="../assets/video/bg.mp4" type='video/mp4'/>
+    <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
+</video>
+
+
+<!-- FIN VIDEO CATEGORIE PSYCHO-->
+
 <body class="main">
 
 <div class="wrapper">
@@ -78,7 +122,7 @@
         <section data-index="1" class="projet" id="justicier_1">
             <div class="text_exp_video">
                 <div class="descrip_film">
-                    <p>Un petit garçon découvre qu'il possède des pouvoirs surnaturels et qu'il n'est pas né sur Terre. Plus tard, il s'engage dans un périple afin de comprendre d'où il vient et pourquoi il a été envoyé sur notre planète.</p>
+                    <p>Transporté sur Terre des années auparavant depuis Krypton, Clark Kent découvre qu'avoir des pouvoirs signifie devoir prendre de difficiles décisions.</p>
 
 
                     <div class="btn_film">
@@ -86,7 +130,7 @@
                             <div style="z-index:200;" class="button_section_film">Ça tourne
                             </div>
                         </a>
-                            <div style="z-index:200;" class="button_section_film">Voir la vidéo
+                            <div style="z-index:200;" class="button_section_film" id="play-superman">Voir la vidéo
                             </div>
                     </div>
                 </div>
@@ -107,7 +151,7 @@
                             <div style="z-index:200;" class="button_section_film">Ça tourne
                             </div>
                         </a>
-                            <div style="z-index:200;" class="button_section_film">Voir la vidéo
+                            <div style="z-index:200;" class="button_section_film" id="play-indiana">Voir la vidéo
                             </div>
                     </div>
                 </div>
@@ -126,7 +170,7 @@
                             <div style="z-index:200;" class="button_section_film">Ça tourne
                             </div>
                         </a>
-                        <div style="z-index:200;" class="button_section_film">Voir la vidéo
+                        <div style="z-index:200;" class="button_section_film" id="play-dredd">Voir la vidéo
                         </div>
                     </div>
                 </div>
