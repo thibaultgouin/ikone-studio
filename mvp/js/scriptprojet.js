@@ -89,7 +89,6 @@ $(document).ready(function () {
             $project.eq(index).removeClass("active");
             index++;
             $bgproject.eq(index).css("top", "0");
-
             $project.eq(index).addClass("active");
             setTimeout(function () {
                 scrollTime = true;
@@ -106,7 +105,6 @@ $(document).ready(function () {
             $project.eq(index).removeClass("active");
             index--;
             $bgproject.eq(index).css("top", "0");
-
             $project.eq(index).addClass("active");
             setTimeout(function () {
                 scrollTime = true;

@@ -142,11 +142,13 @@ section {
 
 #cinq_home {
     width: 100%;
+    background-image:url("../assets/img/emotion.gif");
     background-size: cover;
     position: fixed;
     top: 100%;
     left: 0;
     transition: top 0.8s;
+
 }
 
 #six_home {
@@ -222,6 +224,7 @@ section {
 }
 
 .title_project ul li.active {
+    font-family:Gotham-Bold, sans-serif;
     font-size: 65px;
     opacity: 1;
     transition: all 0.8s;
@@ -532,7 +535,7 @@ section {
 }
 
 .expert_global {
-    margin-top: 17%;
+    margin-top: 14%;
     margin-left: 7%;
 }
 
@@ -864,6 +867,7 @@ transform: translate(-50%, -50%) scale(1)
 }
 
 .title_nom_experience h1 {
+    font-family:Gotham-Bold, sans-serif;
     margin-top: 50px;
     font-size: 80px;
     font-weight: 600;
@@ -896,7 +900,6 @@ transform: translate(-50%, -50%) scale(1)
 }
 
 .name_sentiment {
-
     transition: all 2s;
 }
 
@@ -1191,15 +1194,6 @@ transform: translate(-50%, -50%) scale(1)
     transform: translate(-30px);
 }
 
-.span_hover{
-    position: absolute;
-    right: -60px;
-    top: -6px;
-    padding: 5px;
-    visibility: hidden;
-    transition:all .6s;
-}
-
 
 .mod-navigation .menuList > li a.active:before {
     background-color: #e1e1e1;
@@ -1278,6 +1272,68 @@ transform: translate(-50%, -50%) scale(1)
     position: absolute;
     left: -40px;
 }
+
+
+.span_hover{
+    position: absolute;
+    right: -60px;
+    top: -6px;
+    padding: 5px;
+    visibility: hidden;
+    transition:all .6s;
+}
+
+/*dot nav autre page*/
+
+.mod-navigation .menuNoDot {
+    background-color: transparent;
+    display: block;
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 96px 0 20px 60px;
+    top: 0;
+    z-index: 4;
+}
+
+.mod-navigation .menuNoDot > li {
+    margin-bottom: 20px;
+}
+
+.mod-navigation .menuNoDot > li a {
+    color: #e1e1e1;
+    display: block;
+    font-family: Gotham-Bold, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    padding-right: 22px;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: bottom;
+    font-weight: 600;
+    text-decoration: none;
+    outline: none;
+}
+
+
+
+.mod-navigation .menuNoDot > li a:hover {
+    text-decoration: none;
+
+}
+
+.mod-navigation .menuNoDot> li a > span {
+    display: block;
+}
+
+.mod-navigation.open .menuNoDot {
+    left: 0;
+    -webkit-transition: all .6s ease-in-out;
+    background-color:#1a1a1a;
+    transition: all .6s ease-in-out;
+}
+
 
 /*SOCIAL NETWORK*/
 
@@ -1646,6 +1702,7 @@ textarea {
     }
 
     .title_project ul li.active {
+        font-family:Gotham-Bold, sans-serif;
         font-size: 40px;
         font-weight:800;
         opacity: 1;
@@ -1987,6 +2044,7 @@ textarea {
     /*##############PAGE EXPERIENCE */
 
     .title_nom_experience h1{
+
         margin-top: 50px;
         font-size: 40px;
         font-weight: 700;
