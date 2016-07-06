@@ -1068,9 +1068,9 @@ transform: translate(-50%, -50%) scale(1)
 }
 
 .descrip_film>p{
-    font-size:17px;
+    font-size:16px;
     color:white;
-    font-family:Georgia, sans-serif;
+    font-family:Gotham-light, sans-serif;
     line-height:25px;
     padding:20px;
     text-align:justify;
@@ -1790,6 +1790,8 @@ textarea {
 .title_home_mobile {
     display: none;
 }
+
+
 
 /* ########################## MEDIA QUERIES ########################## */
 
