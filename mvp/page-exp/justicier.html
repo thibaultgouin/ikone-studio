@@ -66,8 +66,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <ul class="list_projet">
-                        <li id="btn_project_0" class="active btn_project">WARCRAFT</li>
-                        <li id="btn_project_1" class="btn_project">X-MEN : APOCALYPSE</li>
+                        <li id="btn_project_0" class="active btn_project">MAN OF STEEL</li>
+                        <li id="btn_project_1" class="btn_project">INDIANA JONES</li>
+                        <li id="btn_project_2" class="btn_project">JUDGE DREDD</li>
                     </ul>
                 </div>
             </div>
@@ -78,15 +79,10 @@
 
 
     <div class="bg_project">
-        <section data-index="1" class="projet" id="projet_1">
+        <section data-index="1" class="projet" id="justicier_1">
             <div class="text_exp_video">
                 <div class="descrip_film">
-                    <p>At vero eos et accusamus et iusto odio
-                        dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-                        atque corrupti quos dolores et quas molestias excepturi sint
-                        occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                        mollitia animi, id est laborum et dolorum fuga.provident, similique sunt in culpa qui officia deserunt
-                        mollitia animi, id est laborum et dolorum fuga.</p>
+                    <p>Un petit garçon découvre qu'il possède des pouvoirs surnaturels et qu'il n'est pas né sur Terre. Plus tard, il s'engage dans un périple afin de comprendre d'où il vient et pourquoi il a été envoyé sur notre planète.</p>
 
 
                     <div class="btn_film">
@@ -94,10 +90,8 @@
                             <div style="z-index:200;" class="button_section_film">Ça tourne
                             </div>
                         </a>
-                        <a href="">
                             <div style="z-index:200;" class="button_section_film">Voir la vidéo
                             </div>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -105,12 +99,11 @@
         </section>
 
 
-        <section data-index="2" class="projet" id="projet_2">
+        <section data-index="2" class="projet" id="justicier_2">
 
             <div class="text_exp_video">
                 <div class="descrip_film">
-                    <p>ti cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-                        est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime p</p>
+                    <p>1936. Indiana Jones est mandaté par les services secrets pour retrouver le Médaillon de Râ, en possession de son ancienne conquête Marion Ravenwood.</p>
 
 
                     <div class="btn_film">
@@ -118,10 +111,27 @@
                             <div style="z-index:200;" class="button_section_film">Ça tourne
                             </div>
                         </a>
-                        <a href="../contact.html">
                             <div style="z-index:200;" class="button_section_film">Voir la vidéo
                             </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-index="2" class="projet" id="justicier_3">
+
+            <div class="text_exp_video">
+                <div class="descrip_film">
+                    <p>Après une apocalypse, les humains vivent dans des grandes cités corrompues. Le juge Dredd patrouille contre le crime, il est à la fois policier, juré et bourreau.</p>
+
+
+                    <div class="btn_film">
+                        <a href="../contact.html">
+                            <div style="z-index:200;" class="button_section_film">Ça tourne
+                            </div>
                         </a>
+                        <div style="z-index:200;" class="button_section_film">Voir la vidéo
+                        </div>
                     </div>
                 </div>
             </div>
@@ -133,6 +143,32 @@
 
 
 <!-- JS LINK -->
+
+<script>
+    var videos = document.querySelectorAll('video');
+    for (var i=0; i< videos.length; i++) {
+        let player = videojs(videos[i].getAttribute('id'), {}, function() {
+            player.dock({
+            });
+            player.shelf.addChild('fullscreenToggle');
+        });
+    }
+</script>
+
+<!-- ANALYTICS -->
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-80379013-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+<!-- FIN ANALYTICS -->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

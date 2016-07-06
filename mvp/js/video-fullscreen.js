@@ -69,4 +69,57 @@ $(function () {
 
     ///// FIN CAPITAINE //////////
 
+    ///// DEBUT FANATIQUE //////////
+
+
+    $('#play-rocky').on('click', function () {
+        playVideoFullscreen('rocky');
+        $('#rocky').css('display','block');
+        $('#rocky video').css('display','block');
+    });
+
+    $('#play-never-back').on('click', function () {
+        playVideoFullscreen('never-back')
+    });
+
+    $('#play-steppin').on('click', function () {
+        playVideoFullscreen('steppin')
+    });
+
+    ///// FIN FANATIQUE //////////
+
+    ///// DEBUT JUSTICIER //////////
+
+
+    $('#play-matrix').on('click', function () {
+        playVideoFullscreen('matrix')
+    });
+
+    $('#play-ipman').on('click', function () {
+        playVideoFullscreen('ipman')
+    });
+
+    $('#play-gran-torino').on('click', function () {
+        playVideoFullscreen('gran-torino')
+    });
+
+    ///// FIN JUSTICIER //////////
+
+    ///// DEBUT MENTOR //////////
+
+
+    $('#play_matrix').on('click', function () {
+        playVideoFullscreen('matrix')
+    });
+
+    $('#play_ipman').on('click', function () {
+        playVideoFullscreen('ipman')
+    });
+
+    $('#play_gran_torino').on('click', function () {
+        playVideoFullscreen('gran-torino')
+    });
+
+    ///// FIN MENTOR //////////
+
     })
