@@ -134,6 +134,19 @@
 
 <!-- JS LINK -->
 
+<!-- JS LINK -->
+
+<script>
+    var videos = document.querySelectorAll('video');
+    for (var i=0; i< videos.length; i++) {
+        let player = videojs(videos[i].getAttribute('id'), {}, function() {
+            player.dock({
+            });
+            player.shelf.addChild('fullscreenToggle');
+        });
+    }
+</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="../js/video-fullscreen.js"></script>

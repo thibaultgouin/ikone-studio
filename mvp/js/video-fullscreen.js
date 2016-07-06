@@ -46,6 +46,27 @@ $(function () {
         playVideoFullscreen('notebook')
     });
 
+    $('#play-pretty-woman').on('click', function () {
+        playVideoFullscreen('pretty-woman')
+    });
+
     ///// FIN ROMANTIQUE //////////
+
+    ///// DEBUT CAPITAINE //////////
+
+
+    $('#play-pirates').on('click', function () {
+        playVideoFullscreen('pirates')
+    });
+
+    $('#play-gladiator').on('click', function () {
+        playVideoFullscreen('gladiator')
+    });
+
+    $('#play-300').on('click', function () {
+        playVideoFullscreen('300')
+    });
+
+    ///// FIN CAPITAINE //////////
 
     })
