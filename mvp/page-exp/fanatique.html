@@ -134,13 +134,33 @@
 
 <!-- JS LINK -->
 
+<!-- JS LINK -->
+
+<script>
+    var videos = document.querySelectorAll('video');
+    for (var i=0; i< videos.length; i++) {
+        let player = videojs(videos[i].getAttribute('id'), {}, function() {
+            player.dock({
+            });
+            player.shelf.addChild('fullscreenToggle');
+        });
+    }
+</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="../js/dotmenu.js"></script>
+<script src="../js/video-fullscreen.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src='../dist/video.js'></script>
+<script src="../dist/es5-shim.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/newsletter.js"></script>
 <script src="../dist/sweetalert.min.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/dotmenu.js"></script>
 <script type="text/javascript" src="../js/scriptprojet.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
 <script type="text/javascript" src="../js/mousewheel.js"></script>
 
 </body>

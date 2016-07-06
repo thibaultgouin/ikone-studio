@@ -14,6 +14,8 @@
     <!-- CSS LINKS -->
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel='stylesheet' href='../dist/video-js.css'>
+    <link rel="stylesheet" href="../css/sublime.css">
     <link rel="stylesheet" type="text/css" href="../dist/sweetalert.css">
     <link rel="stylesheet" href="../fonts/font-awesome/css/font-awesome.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
@@ -23,7 +25,52 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- VIDEO.JS DOCK -->
+    <script src='../dist/video.js'></script>
+    <script src="../dist/videojs-dock.js"></script>
+    <link rel="stylesheet" type="text/css" href="../dist/videojs-dock.css"/>
+
 </head>
+
+<!-- DEBUT VIDEO CATEGORIE ROMANTIQUE-->
+
+<video
+        style="position : absolute; top: 0; z-index:-1;"
+        id="pirates"
+        class="video-js vjs-sublime-skin"
+        controls
+        width="500px" height="500px"
+        data-setup='{ "playbackRates": [1, 1.5, 2] }'>
+    <source src="../assets/video/bg.mp4" type='video/mp4'/>
+    <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
+</video>
+
+<video
+        style="position : absolute; top: 0; z-index:-1;"
+        id="gladiator"
+        class="video-js vjs-sublime-skin"
+        controls
+        width="500px" height="500px"
+        data-setup='{ "playbackRates": [1, 1.5, 2] }'>
+    <source src="../assets/video/bg.mp4" type='video/mp4'/>
+    <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
+</video>
+
+<video
+        style="position : absolute; top: 0; z-index:-1;"
+        id="300"
+        class="video-js vjs-sublime-skin"
+        controls
+        width="500px" height="500px"
+        data-setup='{ "playbackRates": [1, 1.5, 2] }'>
+    <source src="../assets/video/bg.mp4" type='video/mp4'/>
+    <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm'/>
+</video>
+
+
+<!-- FIN VIDEO CATEGORIE ROMANTIQUE-->
+
 <body class="main">
 
 <div class="wrapper">
@@ -66,8 +113,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <ul class="list_projet">
-                        <li id="btn_project_0" class="active btn_project">WARCRAFT</li>
-                        <li id="btn_project_1" class="btn_project">X-MEN : APOCALYPSE</li>
+                        <li id="btn_project_0" class="active btn_project">Pirates des Caraïbes</li>
+                        <li id="btn_project_1" class="btn_project">GLADIATOR</li>
+                        <li id="btn_project_2" class="btn_project">300</li>
                     </ul>
                 </div>
             </div>
@@ -78,15 +126,11 @@
 
 
     <div class="bg_project">
-        <section data-index="1" class="projet" id="projet_1">
+        <section data-index="1" class="projet" id="capitaine_1">
             <div class="text_exp_video">
                 <div class="descrip_film">
-                    <p>At vero eos et accusamus et iusto odio
-                        dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-                        atque corrupti quos dolores et quas molestias excepturi sint
-                        occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt
-                        mollitia animi, id est laborum et dolorum fuga.provident, similique sunt in culpa qui officia deserunt
-                        mollitia animi, id est laborum et dolorum fuga.</p>
+                    <p>Dans la mer des Caraïbes, au XVIIe siècle, Jack Sparrow, flibustier gentleman, voit sa vie idylle basculer le jour où son ennemi, le perfide capitaine Barbossa, lui vole son bateau, le Black Pearl, puis attaque la ville de Port Royal, enlevant au passage la très belle fille du gouverneur, Elizabeth Swann. L'ami d'enfance de celle-ci, Will Turner, se joint à Jack pour se lancer aux trousses du capitaine.
+                        Mais Will ignore qu'une malédiction frappe Barbossa et ses pirates. Lorsque la lune brille, ils se transforment en morts-vivants. Leur terrible sort ne prendra fin que le jour où le fabuleux trésor qu'ils ont amassé sera restitué…</p>
 
 
                     <div class="btn_film">
@@ -94,9 +138,7 @@
                             <div style="z-index:200;" class="button_section_film">Ça tourne
                             </div>
                         </a>
-                        <a href="">
-                            <div style="z-index:200;" class="button_section_film">Voir la vidéo
-                            </div>
+                            <div style="z-index:200;" class="button_section_film" id="play-pirates">Voir la vidéo
                         </a>
                     </div>
                 </div>
@@ -105,12 +147,11 @@
         </section>
 
 
-        <section data-index="2" class="projet" id="projet_2">
+        <section data-index="2" class="projet" id="capitaine_2">
 
             <div class="text_exp_video">
                 <div class="descrip_film">
-                    <p>ti cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-                        est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime p</p>
+                    <p>Le général romain Maximus est le plus fidèle soutien de l'empereur Marc Aurèle, qu'il a conduit de victoire en victoire avec une bravoure et un dévouement exemplaires. Jaloux du prestige de Maximus, et plus encore de l'amour que lui voue l'empereur, le fils de MarcAurèle, Commode, s'arroge brutalement le pouvoir, puis ordonne l'arrestation du général et son exécution. Maximus échappe à ses assassins mais ne peut empêcher le massacre de sa famille. Capturé par un marchand d'esclaves, il devient gladiateur et prépare sa vengeance.</p>
 
 
                     <div class="btn_film">
@@ -118,10 +159,28 @@
                             <div style="z-index:200;" class="button_section_film">Ça tourne
                             </div>
                         </a>
+                            <div style="z-index:200;" class="button_section_film" id="play-gladiator">Voir la vidéo
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section data-index="3" class="projet" id="capitaine_3">
+
+            <div class="text_exp_video">
+                <div class="descrip_film">
+                    <p>Adapté du roman graphique de Frank Miller, 300 est un récit épique de la Bataille des Thermopyles, qui opposa en l'an - 480 le roi Léonidas et 300 soldats spartiates à Xerxès et l'immense armée perse. Face à un invincible ennemi, les 300 déployèrent jusqu'à leur dernier souffle un courage surhumain ; leur vaillance et leur héroïque sacrifice inspirèrent toute la Grèce à se dresser contre la Perse, posant ainsi les premières pierres de la démocratie.
+                    </p>
+
+
+                    <div class="btn_film">
                         <a href="../contact.html">
-                            <div style="z-index:200;" class="button_section_film">Voir la vidéo
+                            <div style="z-index:200;" class="button_section_film">Ça tourne
                             </div>
                         </a>
+                            <div style="z-index:200;" class="button_section_film" id="play-300">Voir la vidéo
+                            </div>
                     </div>
                 </div>
             </div>
@@ -134,13 +193,31 @@
 
 <!-- JS LINK -->
 
+<script>
+    var videos = document.querySelectorAll('video');
+    for (var i=0; i< videos.length; i++) {
+        let player = videojs(videos[i].getAttribute('id'), {}, function() {
+            player.dock({
+            });
+            player.shelf.addChild('fullscreenToggle');
+        });
+    }
+</script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="../js/dotmenu.js"></script>
+<script src="../js/video-fullscreen.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src='../dist/video.js'></script>
+<script src="../dist/es5-shim.js"></script>
+<script src="../js/contact.js"></script>
+<script src="../js/newsletter.js"></script>
 <script src="../dist/sweetalert.min.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/dotmenu.js"></script>
 <script type="text/javascript" src="../js/scriptprojet.js"></script>
+<script type="text/javascript" src="../js/script.js"></script>
 <script type="text/javascript" src="../js/mousewheel.js"></script>
 
 </body>

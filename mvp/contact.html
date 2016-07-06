@@ -73,7 +73,7 @@
                     <div class="row">
                         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-3">
                             <div id="contactForm">
-                                <form>
+                                <form method="post">
                                     <input name="nom" id="nom" type="text" class="feedback-input unfocused" placeholder="Nom" required="required" onFocus="old=this.placeholder; this.placeholder='';" onblur="this.placeholder=old;"/>
                                     <input name="prenom" id="prenom" type="text" class="feedback-input" placeholder="Prenom" required="required" onFocus="old=this.placeholder; this.placeholder='';" onblur="this.placeholder=old;"/>
                                     <input name="email" id="email"  type="email" class="feedback-input" placeholder="Email" required="required" onFocus="old=this.placeholder; this.placeholder='';" onblur="this.placeholder=old;"/>
@@ -106,14 +106,24 @@
 
 
 </div>
-<!-- JS LINK -->
 
+<!-- JS LINK -->
+<script>
+    var videos = document.querySelectorAll('video');
+    for (var i=0; i< videos.length; i++) {
+        let player = videojs(videos[i].getAttribute('id'), {}, function() {
+            player.dock({
+            });
+            player.shelf.addChild('fullscreenToggle');
+        });
+    }
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://www.youtube.com/iframe_api"></script>
 <script src="js/video-fullscreen.js"></script>
-<script src='node_modules/video.js/dist/video.js'></script>
-<script src="node_modules/es5-shim/es5-shim.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src='dist/video.js'></script>
+<script src="dist/es5-shim.js"></script>
 <script src="js/contact.js"></script>
 <script src="js/newsletter.js"></script>
 <script src="dist/sweetalert.min.js"></script>

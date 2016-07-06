@@ -175,7 +175,7 @@ section {
 /* ####### PAGE PROJET ###### */
 
 #projet_1 {
-    background-image: url("../assets/img/romantique/dirty-dancing.jpeg");
+    background-image: url("../assets/img/bg_equipe1.jpg");
     width: 100%;
     background-size: cover;
     top: 0;
@@ -185,7 +185,7 @@ section {
 }
 
 #projet_2 {
-    background-image: url("../assets/img/romantique/notebook.jpg");
+    background-image: url("../assets/img/bg_equipe2.jpg");
     width: 100%;
     background-size: cover;
     top: 100%;
@@ -228,6 +228,130 @@ section {
 }
 
 /* ####### FIN PAGE PROJET ###### */
+
+
+/* ####### PAGE ROMANTIQUE ###### */
+
+#romantique_1 {
+    background-image: url("../assets/img/romantique/dirty-dancing.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+
+#romantique_2 {
+    background-image: url("../assets/img/romantique/notebook.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#romantique_3 {
+    background-image: url("../assets/img/romantique/Pretty-Woman.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#romantique_1 ul li {
+    font-size: 35px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ####### FIN PAGE ROMANTIQUE ###### */
+
+/* ####### PAGE CAPITAINE ###### */
+
+#capitaine_1 {
+    background-image: url("../assets/img/capitaine/pirates.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+
+#capitaine_2 {
+    background-image: url("../assets/img/capitaine/gladiator.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#capitaine_3 {
+    background-image: url("../assets/img/capitaine/300.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#capitaine_1 ul li {
+    font-size: 35px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ####### FIN PAGE CAPITAINE ###### */
+
+/* ####### PAGE FANATIQUE ###### */
+
+#capitaine_1 {
+    background-image: url("../assets/img/capitaine/pirates.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+
+#capitaine_2 {
+    background-image: url("../assets/img/capitaine/gladiator.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#capitaine_3 {
+    background-image: url("../assets/img/capitaine/300.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#capitaine_1 ul li {
+    font-size: 35px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ####### FIN PAGE FANATIQUE ###### */
 
 /* ####### PAGE EQUIPE ###### */
 
