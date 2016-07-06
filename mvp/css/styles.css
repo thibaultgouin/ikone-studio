@@ -438,6 +438,47 @@ section {
 
 /* ####### FIN PAGE MENTOR ###### */
 
+/* ####### PAGE PSYCOPATHE ###### */
+
+#psychopathe_1 {
+    background-image: url("../assets/img/mentor/matrix.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+
+#psychopathe_2 {
+    background-image: url("../assets/img/mentor/ipman.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#psychopathe_3 {
+    background-image: url("../assets/img/mentor/gran-torino.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#psychopathe_1 ul li {
+    font-size: 35px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ####### FIN PAGE MENTOR ###### */
+
 /* ####### PAGE EQUIPE ###### */
 
 .equipe_first {
@@ -1023,7 +1064,7 @@ transform: translate(-50%, -50%) scale(1)
 
 .descrip_film{
     z-index: 9000;
-    background-color:rgba(165,164,164,0.2);
+    background-color:rgba(21,28,36,0.3);
 }
 
 .descrip_film>p{
@@ -1740,7 +1781,7 @@ textarea {
 } */
 
 #RS a {
-    padding: 20px 10px;
+    padding: 0px 10px;
     color: white;
 }
 

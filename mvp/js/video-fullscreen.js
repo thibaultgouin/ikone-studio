@@ -80,10 +80,14 @@ $(function () {
 
     $('#play-never-back').on('click', function () {
         playVideoFullscreen('never-back')
+        $('#never-back').css('display','block');
+        $('#never-back video').css('display','block');
     });
 
     $('#play-steppin').on('click', function () {
         playVideoFullscreen('steppin')
+        $('#steppin').css('display','block');
+        $('#steppin video').css('display','block');
     });
 
     ///// FIN FANATIQUE //////////
@@ -91,8 +95,10 @@ $(function () {
     ///// DEBUT JUSTICIER //////////
 
 
-    $('#play-matrix').on('click', function () {
+    $('#play-superman').on('click', function () {
         playVideoFullscreen('matrix')
+        $('#superman').css('display','block');
+        $('#superman video').css('display','block');
     });
 
     $('#play-ipman').on('click', function () {

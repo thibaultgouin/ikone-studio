@@ -123,16 +123,16 @@ $slider-bg-color: lighten($primary-background-color, 33%);
   background-color: transparent;
 }
 .vjs-sublime-skin .vjs-fullscreen-control:before, .vjs-sublime-skin.vjs-fullscreen .vjs-fullscreen-control:before {
-    content: ''; //Remove Fullscreen Exit Icon
+    content: '×'; //Remove Fullscreen Exit Icon
 }
 .vjs-sublime-skin.vjs-fullscreen .vjs-fullscreen-control {
     background: #fff;
 }
 .vjs-sublime-skin .vjs-fullscreen-control {
-  border: 3px solid #fff;
+ /* border: 3px solid #fff;
   box-sizing: border-box;
   cursor: pointer;
-  margin-top: -7px;
+  margin-top: -7px; */
   top: 50%;
   height: 14px;
   width: 22px;
