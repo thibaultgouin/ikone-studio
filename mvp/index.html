@@ -69,23 +69,28 @@
     <nav class="mod-navigation">
         <div class="nav-icon"><span></span> <span></span> <span></span></div>
 
+
         <div class="dotNav">
             <ul class="menuList">
-                <li id="btn-1" class="active"><span><a href="javascript:void(0);" class="active">ACCUEIL<span class="span_hover">Accueil</span></a></span></li>
-                <li id="btn-2"><span><a href="javascript:void(0);">SERVICE<span class="span_hover">Service</span></a></span></li>
-                <li id="btn-3"><span><a href="javascript:void(0);">EXPERTISES<span class="span_hover">Expertise</span></a></span></li>
-                <li id="btn-4"><span><a href="javascript:void(0);">EXPERIENCE<span class="span_hover">Experience</span></a></span></li>
-                <li id="btn-5"><span><a href="javascript:void(0);">CONTACT<span class="span_hover">Contact</span></a></span></li>
+                <li id="btn-1" class="active"><span><a href="javascript:void(0);" class="active">ACCUEIL<span
+                        class="span_hover">Accueil</span></a></span></li>
+                <li id="btn-2"><span><a href="javascript:void(0);">SERVICE<span
+                        class="span_hover">Service</span></a></span></li>
+                <li id="btn-3"><span><a href="javascript:void(0);">EXPERTISES<span
+                        class="span_hover">Expertise</span></a></span></li>
+                <li id="btn-4"><span><a href="javascript:void(0);">EXPERIENCE<span class="span_hover">Experience</span></a></span>
+                </li>
+                <li id="btn-5"><span><a href="javascript:void(0);">CONTACT<span
+                        class="span_hover">Contact</span></a></span></li>
             </ul>
         </div>
         <ul class="metaList">
             <li><a href="#"><span
+                    class="glyphicon glyphicon-chevron-right fleche_list"></span><span>CATALOGUE D'IDÉES</span></a></li>
+            <li><a href="#"><span
+                    class="glyphicon glyphicon-chevron-right fleche_list"></span><span>CONTACT</span></a></li>
+            <li><a href="#"><span
                     class="glyphicon glyphicon-chevron-right fleche_list"></span><span>MENTIONS LEGALES</span></a></li>
-            <li><a href="#"><span
-                    class="glyphicon glyphicon-chevron-right fleche_list"></span><span>CHARTE ETHIQUE</span></a></li>
-            <li><a href="#"><span
-                    class="glyphicon glyphicon-chevron-right fleche_list"></span><span>KIT DE PRESSE</span></a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-chevron-right fleche_list"></span><span>CGV</span></a></li>
         </ul>
 
         <ul class="socialNet">
@@ -211,7 +216,7 @@
 
         <section id="cinq_home" class="container" style="background-color:#0c0c0c;">
 
-            <div class="img_triples_circle">
+            <div class="img_triples_circle"></div>
 
 
                 <div class="container global_text_section5">
@@ -227,12 +232,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
         </section>
 
         <section id="six_home" class="container content-section text-center">
 
-            <div class="img_triples_circle">
+            <div class="img_triples_circle"> </div>
 
                 <div class="container global_text_section5">
                     <div class="row">
@@ -250,7 +255,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+
 
         </section>
 
@@ -263,10 +268,9 @@
 <!-- JS LINK -->
 <script>
     var videos = document.querySelectorAll('video');
-    for (var i=0; i< videos.length; i++) {
-        let player = videojs(videos[i].getAttribute('id'), {}, function() {
-            player.dock({
-            });
+    for (var i = 0; i < videos.length; i++) {
+        let player = videojs(videos[i].getAttribute('id'), {}, function () {
+            player.dock({});
             player.shelf.addChild('fullscreenToggle');
         });
     }

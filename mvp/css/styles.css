@@ -1488,6 +1488,124 @@ textarea {
 
 /* ########################## MEDIA QUERIES ########################## */
 
+
+
+@media (max-width: 1180px) {
+
+    #projet_1 ul li {
+        font-size: 20px;
+        position: fixed;
+        top: 18%;
+        left:15%;
+        transform: translate(-50%, -50%);
+    }
+
+    .title_project {
+        position: fixed;
+        z-index: 2;
+        font-size: 30px;
+        top: 18%;
+        left:15%;
+        transition: 0.8s;
+    }
+
+    .title_project ul {
+        list-style: none;
+    }
+
+    .title_project ul li {
+        cursor: pointer;
+        transition: all 0.8s;
+        opacity: 0.7;
+        text-align: left;
+        color: white;
+    }
+
+    .title_project ul li.active {
+        font-size: 40px;
+        font-weight:800;
+        opacity: 1;
+        transition: all 0.8s;
+    }
+
+
+    .text_exp_video{
+        position:absolute;
+        width:80%;
+        top:70%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        z-index: 9000;
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .title_section_1{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .text_section_1{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .title_section_3 {
+        margin-top: 15%;
+    }
+
+
+    .title_section_4{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .text_section_4{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .page_experience{
+        margin-top:10%;
+    }
+
+    .btn-experience {
+        margin-bottom: 40px;
+    }
+
+    /*######### PAGE FILM CATALOGUE EXP ###### */
+
+    #projet_1 ul li {
+        font-size: 13px;
+        position: fixed;
+        top: 18%;
+        left:15%;
+        transform: translate(-50%, -50%);
+    }
+
+    .title_project {
+        position: fixed;
+        z-index: 2;
+        font-size: 20px;
+        top: 18%;
+        left:15%;
+        transition: 0.8s;
+    }
+
+    .title_project ul li.active {
+        font-size: 30px;
+        font-weight:800;
+        opacity: 1;
+        transition: all 0.8s;
+    }
+
+}
+
+
+
 @media (max-width: 548px) {
 
     html, body {
@@ -1726,6 +1844,55 @@ textarea {
     }
 
     /* ###### FIN SECTION 4 ###### */
+
+    .vid1-dimensions {
+          width:50px;
+          height:50px;
+      }
+
+    .dirty-dancing-dimensions {
+        width:50px;
+        height:50px;
+    }
+
+    .mouse-wrapper{
+        display:none;
+    }
+
+
+    /*##############PAGE EXPERIENCE */
+
+    .title_nom_experience h1{
+        margin-top: 50px;
+        font-size: 40px;
+        font-weight: 700;
+
+    }
+
+    .retour_experience {
+        right: 30%;
+    }
+
+}
+
+
+
+@media (max-width: 475px) {
+
+    .img_triples_circle {
+        display:none;
+    }
+
+    .global_text_section5 h1{
+        margin-top:130px;
+    }
+
+    #logo{
+        width:267px;
+        height:87px;
+    }
+
+
 
 }
 

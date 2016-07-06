@@ -78,6 +78,45 @@ $(document).ready(function () {
     }
 
 
+    if ($(window).width() < 1180) {
+
+        function projectDown() {
+            if (index == indexMax - 1 || scrollTime == false) {
+                return;
+            }
+            scrollTime = false;
+            $bgproject.eq(index).css("top", "100%");
+            $project.eq(index).removeClass("active");
+            index++;
+            $bgproject.eq(index).css("top", "0");
+
+            $project.eq(index).addClass("active");
+            setTimeout(function () {
+                scrollTime = true;
+            }, 800);
+            $(".design-2").css("top", "30%");
+        }
+
+        function projectUp() {
+            if (index == 0 || scrollTime == false) {
+                return;
+            }
+            scrollTime = false;
+            $bgproject.eq(index).css("top", "100%");
+            $project.eq(index).removeClass("active");
+            index--;
+            $bgproject.eq(index).css("top", "0");
+
+            $project.eq(index).addClass("active");
+            setTimeout(function () {
+                scrollTime = true;
+            }, 800);
+            $(".design-2").css("top", "10%");
+        }
+
+    }
+
+
     /* ######## FIN PAGE PROJET ######## */
 
 
