@@ -314,8 +314,8 @@ section {
 
 /* ####### PAGE FANATIQUE ###### */
 
-#capitaine_1 {
-    background-image: url("../assets/img/capitaine/pirates.jpg");
+#fanatique_1 {
+    background-image: url("../assets/img/fanatique/rocky.jpeg");
     width: 100%;
     background-size: cover;
     top: 0;
@@ -324,8 +324,8 @@ section {
 
 }
 
-#capitaine_2 {
-    background-image: url("../assets/img/capitaine/gladiator.jpg");
+#fanatique_2 {
+    background-image: url("../assets/img/fanatique/Never_Back_Down.jpg");
     width: 100%;
     background-size: cover;
     top: 100%;
@@ -334,8 +334,8 @@ section {
 
 }
 
-#capitaine_3 {
-    background-image: url("../assets/img/capitaine/300.jpg");
+#fanatique_3 {
+    background-image: url("../assets/img/fanatique/steppin.jpg");
     width: 100%;
     background-size: cover;
     top: 100%;
@@ -344,7 +344,7 @@ section {
 
 }
 
-#capitaine_1 ul li {
+#fanatique_1 ul li {
     font-size: 35px;
     position: fixed;
     top: 50%;
@@ -352,6 +352,88 @@ section {
 }
 
 /* ####### FIN PAGE FANATIQUE ###### */
+
+/* ####### PAGE JUSTICIER ###### */
+
+#justicier_1 {
+    background-image: url("../assets/img/justicier/superman.jpeg");
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+
+#justicier_2 {
+    background-image: url("../assets/img/justicier/indiana.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#justicier_3 {
+    background-image: url("../assets/img/justicier/dredd.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#justicier_1 ul li {
+    font-size: 35px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ####### FIN PAGE JUSTICIER ###### */
+
+/* ####### PAGE MENTOR ###### */
+
+#mentor_1 {
+    background-image: url("../assets/img/mentor/matrix.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: fixed;
+
+}
+
+#mentor_2 {
+    background-image: url("../assets/img/mentor/ipman.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#mentor_3 {
+    background-image: url("../assets/img/mentor/gran-torino.jpg");
+    width: 100%;
+    background-size: cover;
+    top: 100%;
+    left: 0;
+    position: fixed;
+
+}
+
+#mentor_1 ul li {
+    font-size: 35px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ####### FIN PAGE MENTOR ###### */
 
 /* ####### PAGE EQUIPE ###### */
 
