@@ -325,7 +325,7 @@ section {
 /* ####### PAGE FANATIQUE ###### */
 
 #fanatique_1 {
-    background-image: url("../assets/img/fanatique/rocky.jpeg");
+    background-image: url("../assets/img/fanatique/rocky.jpg");
     width: 100%;
     background-size: cover;
     top: 0;
@@ -366,7 +366,7 @@ section {
 /* ####### PAGE JUSTICIER ###### */
 
 #justicier_1 {
-    background-image: url("../assets/img/justicier/superman.jpeg");
+    background-image: url("../assets/img/justicier/superman.jpg");
     width: 100%;
     background-size: cover;
     top: 0;
@@ -525,6 +525,7 @@ section {
 }
 
 .title_section_1 {
+    font-variant:small-caps;
     margin: 0 auto;
     color: white;
     font-size: 27px;
@@ -670,6 +671,7 @@ section {
 }
 
 .title_section_2 {
+    font-variant:small-caps;
     text-align: left;
     line-height: 60px;
     font-family: Georgia, serif;
@@ -728,6 +730,7 @@ section {
 
 /* ###### SECTION 3 : SUITE EXPERT ###### */
 .title_section_3 {
+    font-variant:small-caps;
     line-height: 60px;
     margin: 0 auto;
     margin-top: 10%;
@@ -739,6 +742,7 @@ section {
 /* ###### SECTION 4 : EXPERIENCEEEE ###### */
 
 .title_section_4 {
+    font-variant:small-caps;
     margin: 0 auto;
     color: white;
     font-size: 27px;
@@ -1577,7 +1581,7 @@ transform: translate(-50%, -50%) scale(1)
 }
 
 .title_home {
-    text-transform: uppercase;
+    font-variant:small-caps;
     font-size: 40px;
     line-height: 55px;
     width: 65%;
@@ -1773,7 +1777,7 @@ textarea {
 
 #page_contact {
     transition: 0.8s;
-    background-color: #1d1e22;
+    background-color: #161c23;
 }
 
 /*.img_triples_circle_contact {
@@ -1798,10 +1802,57 @@ textarea {
     display: none;
 }
 
+.mentions h1{
+    margin-bottom:30px;
 
+}
+
+#page_mentions {
+    transition: 0.8s;
+    background-color: #161c23;
+}
+
+.mentions{
+    color:white;
+    margin-bottom:60px;
+}
+
+.mentions_title{
+    font-size:18px;
+}
+
+.text_mentions{
+    margin-top:3%;
+    float:left;
+    text-align:left;
+}
+
+.mentions a{
+    color:white;
+    text-decoration: none;
+}
+
+.mentions a:hover{
+    color:white;
+    text-decoration: none;
+}
 
 /* ########################## MEDIA QUERIES ########################## */
 
+
+
+
+@media (max-width: 1300px) {
+
+
+    .title_project ul li.active {
+        font-family:Gotham-Bold, sans-serif;
+        font-size: 50px;
+        font-weight:800;
+        opacity: 1;
+        transition: all 0.8s;
+    }
+}
 
 
 @media (max-width: 1180px) {
@@ -1861,6 +1912,7 @@ textarea {
 @media (max-width: 768px) {
 
     .title_section_1{
+        font-variant:small-caps;
         width: 60%;
         margin: 0 auto;
     }
@@ -1870,11 +1922,13 @@ textarea {
     }
 
     .title_section_3 {
+        font-variant:small-caps;
         margin-top: 15%;
     }
 
 
     .title_section_4{
+        font-variant:small-caps;
         width: 60%;
         margin: 0 auto;
     }
@@ -2094,6 +2148,7 @@ textarea {
     }
 
     .title_section_2 {
+        font-variant:small-caps;
         display: none;
     }
 
@@ -2127,6 +2182,7 @@ textarea {
     /* ###### FIN SECTION 2 ###### */
     /* ###### SECTION 3 ###### */
     .title_section_3 {
+        font-variant:small-caps;
         font-size: 22px;
         line-height: 40px;
         margin-top: 10%;
